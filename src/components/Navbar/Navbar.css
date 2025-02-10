@@ -1,0 +1,84 @@
+/* Navbar Styling */
+/* Ensure navbar stays fixed at the top */
+/* Ensure navbar stays fixed at the top with transparency */
+/* Ensure navbar stays fixed at the top */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(159, 24, 24);
+    color: white;
+    padding: 15px;
+    z-index: 100; /* Make sure it's above other elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Brand Name Styling */
+.brand-name1 {
+    color: beige;
+    font-size: 40px;
+    margin-left: 60px;
+}
+
+.brand-name2 {
+    color: black;
+    font-size: 30px;
+    margin-left: 5px; /* Small space between COLO and SHOP */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 70px; /* Space between links */
+}
+
+/* Remove underline and set default text color */
+.nav-links a {
+    text-decoration: none; /* Removes underline */
+    color: black; /* Default text color */
+    font-size: 22px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Add hover effect */
+.nav-links a:hover {
+    color: white; /* Change color when hovered */
+}
+
+/* Login Box Styling */
+/* Login Box Styling (Transparent) */
+.login-box {
+    background-color: transparent; /* Transparent background */
+    color:black; /* Text color */
+    padding: 10px 30px;
+    border: 1px solid white; /* White border to keep visibility */
+   
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 60px; /* Move it to the right */
+}
+
+/* Hover Effect */
+.login-box:hover{
+    color: white;
+    border: 1px solid black;
+}
+.login-box a {
+    text-decoration: none; /* Removes underline */
+    color: black; /* Default text color */
+    font-size: 22px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Add hover effect */
+.login-box a:hover {
+    color: white; /* Change color when hovered */
+}

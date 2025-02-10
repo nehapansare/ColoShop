@@ -1,0 +1,47 @@
+.footer {
+    background-color: #222; /* Dark background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Brand Name */
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f8d210; /* Yellow */
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f8d210; /* Yellow on hover */
+}
+
+/* Copyright Text */
+.copyright {
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
