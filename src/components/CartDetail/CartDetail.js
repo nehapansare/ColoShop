@@ -1,21 +1,31 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom"; // Import useParams to get the id from the URL
+import { useParams } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
-import config from "../../Config/CartDetail"; // Import the config file
-import "./CartDetail.css"; // Import CSS file
 import Navbar1 from "../../components/CartDetail/Navbar/Navbar";
+import config from "../../Config/CartDetail";
+import "./CartDetail.css";
 
 function CartDetail() {
-  const { id } = useParams(); // Get id from URL params
-  const product = config.products.find((p) => p.id === Number(id)) || config.products[0];
+  const { id } = useParams();
+  const product = config.products.find((p) => p.id === id);
 
-  const [mainImage, setMainImage] = useState(product.images.main);
+
+  // Always call hooks unconditionally.
+  // Use a fallback value (an empty string) if product isn't available yet.
+  const [mainImage, setMainImage] = useState(product ? product.images.main : "");
   const [selectedSize, setSelectedSize] = useState(null);
 
   useEffect(() => {
-    setMainImage(product.images.main);
-    setSelectedSize(null); // Reset size selection when product changes
+    if (product) {
+      setMainImage(product.images.main);
+      setSelectedSize(null);
+    }
   }, [product]);
+
+  // Now conditionally render an error message if the product is not found.
+  if (!product) {
+    return <div className="error">Product not found.</div>;
+  }
 
   return (
     <div>
@@ -34,6 +44,7 @@ function CartDetail() {
                 key={index}
                 src={img}
                 alt={`Thumbnail ${index + 1}`}
+
                 className="small-image"
                 onClick={() => setMainImage(img)}
               />
@@ -52,6 +63,7 @@ function CartDetail() {
               <button
                 key={size}
                 className={`size-button ${selectedSize === size ? "active" : ""}`}
+
                 onClick={() => setSelectedSize(size)}
               >
                 {size}
@@ -97,7 +109,10 @@ function CartDetail() {
         </p>
         <p>
           For online and store complaints, email{" "}
-          <a href={`mailto:${config.customerService.email}`}>{config.customerService.email}</a>
+          <a href={`mailto:${config.customerService.email}`
+}>
+            {config.customerService.email}
+          </a>
         </p>
 
         <p>
