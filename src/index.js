@@ -9,6 +9,7 @@ import NavbarCart from './components/CartDetail/Navbar/Navbar';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Login from './views/Login/Login';
 import SignUp from './views/Sign/Signup';
+import Designer from './components/Designer/Designer';
 
 
  const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -41,6 +42,10 @@ import SignUp from './views/Sign/Signup';
   {
     path:"/signup",
     element:< SignUp/>
+  },
+  {
+    path:"/designer",
+    element:<Designer/>
   },
  
  ])
