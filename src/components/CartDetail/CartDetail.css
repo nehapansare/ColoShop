@@ -151,4 +151,31 @@
   .product-description a:hover {
     text-decoration: underline;
   }
+  .cart-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .quantity-slider {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .confirm-order {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .confirm-order:hover {
+    background-color: #218838;
+  }
   

@@ -1,79 +1,171 @@
-.login-container {
-    display: flex;
-    height: 100vh;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+/* Full screen container */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+
+}
+.body{
+
+}
+
+/* Left panel with full-height image */
+.left-panel {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+.login-header{
+  font-size: 30px;
+}
+
+.left-panel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+ 
+}
+
+/* Text overlay animation */
+@keyframes slideIn {
+  from {
+    transform: translate(-100%, -50%);
+    opacity: 0;
   }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+/* Text overlay on image */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  animation: slideIn 1s ease-out;
+}
+
+/* Right Panel Styling */
+.right-panel {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #feffea, #fffcf8);
+  box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px 0 0 20px;
+}
+
+/* Stylish Form */
+.form {
+  width: 80%;
   
-  .image-container {
-    position: absolute;
-    top: 0;
-    left: 0;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Group Styling */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Submit Button with Hover Effect */
+.submit-btn {
+  background: linear-gradient(90deg, #222, #224);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #333, #114);
+  transform: scale(1.05);
+}
+
+/* Toggle Between Login and Sign Up */
+.toggle-text {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.toggle-btn {
+  border: none;
+  background: none;
+  color: #222;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+  color: #223;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel {
     width: 100%;
-    height: 100%;
+    height: 40vh;
   }
-  
-  .loginImg {
+
+  .right-panel {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 60vh;
+    border-radius: 20px 20px 0 0;
   }
-  
-  .form-container {
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-    background-color: transparent; /* Makes the form container transparent */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    max-width: 400px;
-    width: 100%;
+
+  .form {
+    width: 90%;
   }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  .links {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .links a {
-    color: #007bff;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .links a:hover {
-    text-decoration: underline;
-  }
-  
+}

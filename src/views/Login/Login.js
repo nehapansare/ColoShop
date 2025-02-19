@@ -1,61 +1,90 @@
-import React, { useState } from "react";
-import login from '../../img/Home.png'
+import React, { useState } from 'react';
+import './Login.css';
+import loginImage from '../../img/login_LE_upscale_balanced_x4.jpg';
 
 const Login = () => {
-  const [loginData, setLoginData] = useState({
-    email: "",
-    password: "",
+  const [isSignUp, setIsSignUp] = useState(false);
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: ''
   });
 
-  const handleChange = (e) => {
-    setLoginData({ ...loginData, [e.target.name]: e.target.value });
-  };
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-
-    // Get all stored users
-    const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
-
-    // Check if the entered email and password match any user
-    const user = existingUsers.find(
-      (u) => u.email === loginData.email && u.password === loginData.password
-    );
-
-    if (user) {
-      alert(`Welcome, ${user.name}! 🎉`);
-      setLoginData({ email: "", password: "" }); // Clear form
-    } else {
-      alert("Invalid email or password! ❌");
-    }
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-    
-      <img src={login} className="loginImg"/>
-      <h2>Login</h2>
-      <form onSubmit={handleLogin}>
-        <input
-          type="email"
-          name="email"
-          value={loginData.email}
-          onChange={handleChange}
-          placeholder="Enter your email"
-          required
-        />
-        <br /><br />
-        <input
-          type="password"
-          name="password"
-          value={loginData.password}
-          onChange={handleChange}
-          placeholder="Enter your password"
-          required
-        />
-        <br /><br />
-        <button type="submit">Login</button>
-      </form>
+    <div className='body'>
+    <div className="container">
+      {/* Left Panel with Full Image */}
+      <div className="left-panel">
+        <img src={loginImage} alt="Login Background" className="left-panel-image" />
+        <div className="overlay-text">
+          <h2>{isSignUp ? 'Hello!' : 'Welcome Back!'}</h2>
+          <p>{isSignUp ? 'Sign up to explore more features.' : 'Login to continue your journey'}</p>
+        </div>
+      </div>
+
+      {/* Right Panel */}
+      <div className="right-panel">
+        <h3 className='login-header'>{isSignUp ? 'Sign Up' : 'Login'}</h3>
+        <form className="form">
+          {isSignUp && (
+            <div className="input-group">
+              <label htmlFor="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                value={formData.username}
+                onChange={handleInputChange}
+                placeholder="Enter username"
+              />
+            </div>
+          )}
+
+          <div className="input-group">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              placeholder="Enter email"
+            />
+          </div>
+
+          <div className="input-group">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
+              placeholder="Enter password"
+            />
+          </div>
+
+          <button type="submit" className="submit-btn">
+            {isSignUp ? 'Sign Up' : 'Login'}
+          </button>
+
+          <p className="toggle-text">
+            {isSignUp ? 'Already have an account?' : "Don't have an account?"}
+            <button type="button" onClick={() => setIsSignUp(!isSignUp)} className="toggle-btn">
+              {isSignUp ? 'Login' : 'Sign Up'}
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
     </div>
   );
 };

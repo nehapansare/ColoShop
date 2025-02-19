@@ -10,6 +10,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Login from './views/Login/Login';
 import SignUp from './views/Sign/Signup';
 import Designer from './components/Designer/Designer';
+import DesignerDetail from './components/DesignerDetail/DesignerDetail';
+import Payment from './components/Payment/Payment';
+import OrderSummary from '../src/components/OrderSummary/OrderSummary';
 
 
  const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -47,7 +50,18 @@ import Designer from './components/Designer/Designer';
     path:"/designer",
     element:<Designer/>
   },
- 
+  {
+    path:"/designerdetail",
+    element:<DesignerDetail/>
+  },
+  {
+    path:"/payment",
+    element:<Payment/>
+  },
+  {
+    path:"/ordersummary",
+    element:<OrderSummary/>
+  },
  ])
 root.render( 
 <div>

@@ -2,6 +2,7 @@ import React from 'react';
 import './Designer.css';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
+import { Link } from 'react-router-dom';
 
 function Designer() {
   const products = [
@@ -33,7 +34,9 @@ function Designer() {
                   <div className="product3-details">
                     <div className="detail3"><span className="label3">Description:</span> <span>{product.describe}</span></div>
                   </div>
-                  <button className="add-to-cart-btn">Explore More</button> {/* Add to Cart button */}
+                  <Link to="/designerdetail">
+  <button className="add-to-cart-btn">Explore More</button>
+</Link>
                 </div>
               </div>
             ))}
@@ -51,7 +54,10 @@ function Designer() {
                   <div className="product3-details">
                     <div className="detail3"><span className="label3">Description:</span> <span>{product.describe}</span></div>
                   </div>
-                  <button className="add-to-cart-btn">Explore More</button> {/* Add to Cart button */}
+                  <Link to="/designerdetail">
+  <button className="add-to-cart-btn">Explore More</button>
+</Link>
+
                 </div>
               </div>
             ))}
