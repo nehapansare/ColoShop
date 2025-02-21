@@ -30,11 +30,11 @@ function Shop() {
   return (
     <div>
       <div className="shop-container">
-        <Navbar cartCount={cartItems.length} />
+        <Navbar  />
      
           <div className="cart-badge">
             <span className="badge-icon">🛒</span>
-            <span>{cartItems.length}<i class="fa-regular fa-cart-shopping"></i></span>
+            <span>{cartItems.length}</span>
           </div>
 
         <div className="cart-container">
@@ -47,7 +47,7 @@ function Shop() {
                 <Link to={`/cartdetail/${item.id}`} className="cart-link">
                   <div className="cart-item">
         
-                    <div className="image-container">
+                    <div className="image-container1">
                       {/* Regular Image */}
                       <img src={item.imgUrl} alt={item.title} className="product-image" />
                       
