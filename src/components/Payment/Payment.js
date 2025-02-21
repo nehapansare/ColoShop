@@ -45,8 +45,8 @@ const PaymentButton = ({ price, name1, contact1, email1 }) => {
       return;
     }
 
-    const checkoutData = JSON.parse(localStorage.getItem('checkoutFormData'));
-    if (!checkoutData) {
+    const fromData = JSON.parse(localStorage.getItem('checkoutFormData'));
+    if (!fromData) {
       toast.error('No checkout data found. Please try again.');
       setLoading(false);
       return;
@@ -64,12 +64,12 @@ const PaymentButton = ({ price, name1, contact1, email1 }) => {
         navigate('/bill');
       },
       prefill: {
-        name: `${checkoutData.firstname || ''} ${checkoutData.lastname || ''}`,
+        name: `${fromData.firstname || ''} ${fromData.lastname || ''}`,
         email: localemail,
-        contact: checkoutData.phoneNumber || '',
+        contact: fromData.phoneNumber || '',
       },
       notes: {
-        address: `A/P ${checkoutData.address || ''}, Flat No. ${checkoutData.apartment || ''}, City: ${checkoutData.city || ''}, State: ${checkoutData.state || ''}, Pincode: ${checkoutData.zipCode || ''}`,
+        address: `A/P ${fromData.address || ''}, Flat No. ${fromData.apartment || ''}, City: ${fromData.city || ''}, State: ${fromData.state || ''}, Pincode: ${fromData.zipCode || ''}`,
       },
       theme: {
         color: "#3f5944",

@@ -56,6 +56,7 @@ function Home() {
   }, []);
 
   return (
+    <div>
     <div className="home-container">
       <Navbar />
       <div className="image-container">
@@ -116,8 +117,10 @@ function Home() {
           ))}
         </div>
 
-      <Footer />
+     
     </div>
+     <Footer />
+     </div>
   );
 }
 
