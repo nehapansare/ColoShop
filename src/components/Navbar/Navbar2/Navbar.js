@@ -6,8 +6,8 @@ function Navbar2() {
     <div>
       <div className='small-navbar2'>
         <div>Men</div>
-        <div>Women</div>
-        <div>Beauty</div>
+        <div><a href='#product'>Women</a></div>
+        <div><a href='#beauty'>Beauty</a></div>
         <div>Accessories</div>
       </div>
     </div>

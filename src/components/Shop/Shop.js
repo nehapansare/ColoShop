@@ -31,11 +31,10 @@ function Shop() {
     <div>
       <div className="shop-container">
         <Navbar  />
-     
-          <div className="cart-badge">
-            <span className="badge-icon">🛒</span>
-            <span>{cartItems.length}</span>
-          </div>
+        <div className="cart-badge">
+  <span className="badge-icon">🛒</span>
+  <span className="badge-number">{cartItems.length}</span>
+</div>
 
         <div className="cart-container">
           {CART.map((item) => {
