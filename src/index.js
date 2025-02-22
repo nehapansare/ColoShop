@@ -23,6 +23,10 @@ import OrderSummary from '../src/components/OrderSummary/OrderSummary';
     element:< Home/>
   },
   {
+    path:"/",
+    element:< Home/>
+  },
+  {
     path:"/contact",
     element:< Contact/>
   },

@@ -6,7 +6,7 @@ import Footer from '../../../src/components/Footer/Footer';
 import banner from '../../../src/img/Black Red Minimalist Fashion Product Introduction Landscape Banner.png';
 import saleImg from '../../img/Black And White Modern Fashion Sale Banner Landscape.png';
 import './Home.css'; // Ensure your CSS reflects the updated class names
-import {products,beauty}from '../../Config/HomeCart';
+import {products,beauty,accessories}from '../../Config/HomeCart';
 
 function Home() {
   // Product data for Beauty Products
@@ -208,6 +208,66 @@ function Home() {
           })}
         </div>
       </div>
+
+      {/* Our Accessories Section */}
+<div id='accessories'>
+  <p className="p1">Our Accessories</p>
+  <div className="cart-container2">
+    {accessories.map((product) => {
+      const isInCart = cartItems.some(item => item.id === product.id);
+      return (
+        <div key={product.id} className="cart-item-wrapper">
+          <Link to={`/cartdetail/${product.id}`} className="cart-link">
+            <div className="cart-item">
+              <div className="image-container1">
+                <img src={product.img} alt={product.title} className="product-image" />
+                <img src={product.hoverImg} alt={product.title} className="product-image-hover" />
+                {isInCart && (
+                  <div className="in-cart-indicator">
+                    <span>✓ In Cart</span>
+                  </div>
+                )}
+                <div className="quick-add-overlay">
+                  <button 
+                    className={`quick-add-btn ${isInCart ? 'in-cart' : ''}`}
+                    onClick={(e) => isInCart ? removeFromCart(e, product.id) : addToCart(e, product)}
+                  >
+                    { isInCart ? "Remove from Cart" : "Quick Add" }
+                  </button>
+                </div>
+              </div>
+              <p className="title">{product.title}</p>
+              <div className="price-container">
+                <div className="price-row">
+                  <span className="current-price">{product.price}</span>
+                  <span className="original-price">{product.price}</span>
+                  <span className="discount-label">5% off</span>
+                </div>
+                <div className="offer-details">
+                  <div className="applied-offer">
+                    <span className="offer-icon">✓</span>
+                    <span className="offer-text">₹20 OFF | appliedOffer</span>
+                  </div>
+                  <div className="offer-applied">Applied</div>
+                </div>
+                <div className="delivery-info">
+                  <span>Free Delivery</span>
+                </div>
+                <div className="ratings">
+                  <div className="rating-badge">
+                    <span className="rating-value">⭐ {product.rating}</span>
+                  </div>
+                  <span className="review-count">759 Reviews</span>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+      );
+    })}
+  </div>
+</div>
+
       </div>
 
       

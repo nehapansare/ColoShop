@@ -134,4 +134,91 @@ const products = [
         rating: 4.7 
       },
     ];
-export{products,beauty}
+
+// Accessories configuration for HomeCart.js
+
+const accessories = [
+    {
+      id: 101,
+      img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQkNp-I4K1ySRWPJ_M0wjNhsFuKLzg6JcSQzmcoRdUC-Qj6_3dhR6OkxixsmtGStM_fHhFsp-raQgVC6AUV1AXiJNzOxiKFMr5BN2YCS98vNzXVqT109Soq6Q&usqp=CAE",        // Replace with your actual image path
+      hoverImg: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTfyHvZo3uF-xvMOq-9tIiSegU2FHVaIfC8m-hFtQUkP7a7bWrchJTb-z2385lz1O9MZcFnwtmIGIzvuvW9plbN1lzE01B4AhaFIuT4aODm&usqp=CAE", // Replace with your actual image path for hover effect
+      title: "Classic Leather Belt",
+      price: "₹499",
+      rating: "4.5"
+    },
+    {
+      id: 102,
+      img: "path/to/accessory2.png",
+      hoverImg: "path/to/accessory2-hover.png",
+      title: "Stylish Sunglasses",
+      price: "₹799",
+      rating: "4.7"
+    },
+    {
+      id: 103,
+      img: "path/to/accessory3.png",
+      hoverImg: "path/to/accessory3-hover.png",
+      title: "Luxury Wrist Watch",
+      price: "₹1499",
+      rating: "4.8"
+    },
+    {
+        id: 104,
+        img: "path/to/accessory3.png",
+        hoverImg: "path/to/accessory3-hover.png",
+        title: "Luxury Wrist Watch",
+        price: "₹1499",
+        rating: "4.8"
+      },
+      {
+        id: 105,
+        img: "path/to/accessory3.png",
+        hoverImg: "path/to/accessory3-hover.png",
+        title: "Luxury Wrist Watch",
+        price: "₹1499",
+        rating: "4.8"
+      }, {
+        id: 106,
+        img: "path/to/accessory3.png",
+        hoverImg: "path/to/accessory3-hover.png",
+        title: "Luxury Wrist Watch",
+        price: "₹1499",
+        rating: "4.8"
+      }, {
+        id: 107,
+        img: "path/to/accessory3.png",
+        hoverImg: "path/to/accessory3-hover.png",
+        title: "Luxury Wrist Watch",
+        price: "₹1499",
+        rating: "4.8"
+      },
+      {
+        id: 108,
+        img: "path/to/accessory3.png",
+        hoverImg: "path/to/accessory3-hover.png",
+        title: "Luxury Wrist Watch",
+        price: "₹1499",
+        rating: "4.8"
+      },
+      {
+        id: 109,
+        img: "path/to/accessory3.png",
+        hoverImg: "path/to/accessory3-hover.png",
+        title: "Luxury Wrist Watch",
+        price: "₹1499",
+        rating: "4.8"
+      },
+      {
+        id: 100,
+        img: "path/to/accessory3.png",
+        hoverImg: "path/to/accessory3-hover.png",
+        title: "Luxury Wrist Watch",
+        price: "₹1499",
+        rating: "4.8"
+      },
+
+  ];
+  
+
+
+export{products,beauty,accessories}
