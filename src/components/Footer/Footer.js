@@ -1,12 +1,13 @@
 import React from 'react';
 import './Footer.css';
+import loginImg from '../../img/logo.png'
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
-          <img src="your-logo-url-here" alt="Fashion World Logo" className="footer-logo-img" />
+          <img src={loginImg} alt="Fashion World Logo" className="footer-logo-img" />
         </div>
 
         <div className="footer-section">
@@ -18,9 +19,16 @@ function Footer() {
           <h3 className="footer-title">Quick Links</h3>
           <ul className="footer-links">
             <li><a href="/">Home</a></li>
-            <li><a href="/designers">Designers</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/shop">Shop</a></li>
+          </ul>
+        </div>
+
+        <div className="footer-section">
+          <h3 className="footer-title">Services</h3>
+          <ul className="footer-links">
+            <li><a href="/designer">Designers</a></li>
+            <li><a href="/blog">Blog</a></li>
           </ul>
         </div>
 
