@@ -13,7 +13,8 @@ import Designer from './components/Designer/Designer';
 import DesignerDetail from './components/DesignerDetail/DesignerDetail';
 import Payment from './components/Payment/Payment';
 import OrderSummary from '../src/components/OrderSummary/OrderSummary';
-
+import Blog from '../src/views/Blog/Blog'
+import BlogDetail from './components/BlogDetail/BlogDetail';
 
  const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -65,6 +66,14 @@ import OrderSummary from '../src/components/OrderSummary/OrderSummary';
   {
     path:"/ordersummary",
     element:<OrderSummary/>
+  },
+  {
+    path:"/blog",
+    element:<Blog/>
+  },
+  {
+    path:"/blogdetail/:id",
+    element:<BlogDetail/>
   },
  ])
 root.render( 
