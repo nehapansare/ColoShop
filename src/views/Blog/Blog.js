@@ -2,8 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 import './Blog.css';
 import blogPosts from '../../Config/BlogData';
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
 
 const Blog = () => (
+    <div>
+        <Navbar/>
   <div className="blog-container">
     {blogPosts.map(({ id, date, author, title, excerpt, image }) => (
       <div className="blog-card" key={id}>
@@ -20,6 +24,8 @@ const Blog = () => (
         </div>
       </div>
     ))}
+  </div>
+ <Footer/>
   </div>
 );
 
