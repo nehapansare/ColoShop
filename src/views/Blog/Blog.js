@@ -11,7 +11,7 @@ const Blog = () => (
   <div className="blog-container">
     {blogPosts.map(({ id, date, author, title, excerpt, image }) => (
       <div className="blog-card" key={id}>
-        <div className="image-container">
+        <div className="image-container4">
           <img src={image} alt={title} />
         </div>
         <div className="content">
