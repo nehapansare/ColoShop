@@ -393,7 +393,366 @@ const config = {
         "Common Generic Name: Cardigan Sweater",
       ],
     },
+   
+    {
+      id: "101",
+      title: "Elegant Pearl Necklace",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSjtN3PHNRWjojOfbg57AC-dwwhFO--UQuHmpmyzd4j_66a31gD-W7E_O6-wKFDg_7Atsxxy_IS7L0cP0Kr5Q6-3kU-tl8Y&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQCuDwgha9T4CcK_ODw_7O6Mzg3RFQ1HpWshcirYoDqoZxE-J9sT2KfSOUueE4uMzMr3axDN9UJMiCxsZ4XuULWeVxs9rj8ilicWPH4H26BcR-MNFSegSRZ&usqp=CAE",
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTRHKiX_-E8qwlUAkASPEmMfJ2rjvnKR76cuinPycCK4AHT27cNKY6wlXlLuKNdVFOWsOij_2aWq_yJmns1zvr-ehkkZsy55SC0jGuzcJCYmPzokQtZTci3&usqp=CAE",
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ1vG28LFwUboy7wOICGjCtp4Mtpu-LwfqHOB-PNSjFSBg0_909D2HdGdflzU_GuKvuc_4iJ2KVWSElXRCBXmVmOs-Kq5N8Iey2pWFhClmw1e8cScMoxUaPxA&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+
+    {
+      id: "102",
+      title: "Elegant Pearl NecklaceLuxury Handbag",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQXtzjDVf2_Exs75uf0jtIgeEpzFSdDg9mVhmKfFrBLWD0zwGA4CUW0Ao4LyURcgKSHxrchyQwjFCFLD7gJakAX3AgI1ItyXOGnoCCiq1T_&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRBDrheeBguqLfCyaO5vS0KppT4emNYnB_2unqfyNfXMjdJ-y0b3r5-qU4kWygMI8ZG8LukB9JQZEs8nvdza_ot9_LeMgFkoBQ2HSjtfht7&usqp=CAE",
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQN9aBQ_5jTI6ylueBxS5GZuHqYoC_a53wFBsONpAaMR4atZFdEDhGO_gWF_pNpf-5c2jTYeilh2ylvTDv6aELgPDrteAUbSGbP5IyFLXTqeQ6pCe4uoyhd7A&usqp=CAE",
+        
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+    {
+      id: "103",
+      title: "Stylish Sunglasses",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSamzZW4MYYffYJyKBJjpJ9WY1v137n-YTW_W2foGefarSPp_S0G7mCEALk0hmBiiFe1WLDvFFc36Q8T1VN_LSeuY_ihJcDGhplLQw7_wmygN7ZKRm7as54&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSGp4vqU23bXZKx72tTYY86YSQJtyt47udG-QybZOqrfj8Aakd2sxwzcpWU5DnuxeERjGYndir0_-Mme4HdlgSMlZxtW9M01ODqJvCwYmDsP5NKIXZsTTfUSQ&usqp=CAE",
+          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSA9vcrrL06jLb9m_UJnqj-BXxcvQaNKKpT9D_bPPuEorRwu_gLTV9bz1FYlivVYMGUixYK5E8-K3Ms_lIs51748jak2pkg5KfzDecDJdnG0r3FR4UwweSZJg&usqp=CAE",
+          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQaBXqi2xqIVhUgVYDhtllB2VVhbAudpNIYCrQF4qNnarR2Nr6UI65hGGq-xTSb0IghYrS9XD8GoIMO_Q6EShgPVFvuhoX5oW1JwI7xTQNZ2sP1cIi13FpTbQ&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+
+    {
+      id: "104",
+      title: "Elegant Pearl Necklace",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRvPgvqakmTsrbiuBMz0HV8Pk7_4mdjit7vq7brLhkdX6rcb4HbV0vvNW2it4xUFWFg535dbjquWo1b_9cZuoC5pyyp4SkMadVssQsDhB9PgSzsqlfPczos&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ3rN8VaeThOe2dA2xij0tA6JmVxVDXS0Em52BKrr5lHyEkJ4wvDUWBgVa_SYcqHgQo42AijR3NojPFtgouyVb25phfJnTwlFG6aVJREjLporyf3wvQWoIt&usqp=CAE",
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS4KXCoeWuVzCFKkCjNz5ROA1VAnbcUZm21nTAbD4OwMrE2i-nG1aTAQjVr0xk-pr-NW4NSWpFsVLUoVQ9c1BPXxIWC111Xh_Le1mAzL_uCMQKHiwwEw0BgztE&usqp=CAE",
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQJv15LXGoT4TMjLGQauu1D4hcrtzymQs-c3ZMm_bcprDSzgMzCONpBb9G5aa3noYpxk48lQlUNQLb5afHCJUBO6tZSwNVvmlc4INp9Bx4&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+
+    {
+      id: "105",
+      title: "Elegant Pearl Necklace",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRCQ9XELII7HiD-Ab6Qh-mgbmiI-Z-aYe0krcE076ySMVHmY7AhLGuet40-Vp2ENt28kXpiDmaqgNeZZb0XW-O42F_FhWy5xe9spwy8BfXB9zrzPvaOXttX&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRCBu7TBuftmrlYm8iV59S5F8hA_Bmce9YchekIqz6C22ap5moVBtX6-k9bUiYM5MCjrCMIky8hViN_1knmaebHOwOlNpLh3MAzhR7kCMWx_SFjdk3q_7uk6A&usqp=CAE",
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR3XtGDmiZ9CVVCLhn-OAf0T5yHm0raqU6mU1OYzs9NtJxl0CpkF6FaHXkEPGfQQM6eXLuCgKm8sv2-l2oBqHS7DEfbd2Xvy3NxTH8tkzsMOsOUE25zRLf1&usqp=CAE",
+          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRLqrqaEJYdtxZYISvx_Db13sCH1zAsnkPHPmfU3cX7U7k4EZv6zdGCvOLVqlAn2kcThnlw64x7n67hzLI1hToIOP7bpsQ9u20R4TJzHV2s&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+
+    {
+      id: "106",
+      title: "Elegant Pearl Necklace",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSpKQYWqa1d12Itjlm14WQFgX7f3bx9GSOw1DSbjQBWOdOnfKw7LPcuMkyhZnQE-Lh_H5bbpnE2ELRMHEZLKFbSDrtqR4B8beZ0mQi5Thgxw28kTN8rsrcEIA&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS2smzygaxlx60vJoJKGFr7tIn_FwOsrSicNMsFEdThiiakbZJsOQ5uYZJhD3Gx2SYuvkeGzm2fyGpIWdgZG2y483NADxyoDcUCGthayUo&usqp=CAE",
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRWnDyDGi5lpfFfBRvYtPHZb_p5d5S7WPpValmls-RtEAnGDYdDWzTLSf24O9wxB9JYl-3teCVJ6Xj6e6mpXqFNAF3QKB7yie6BNvfSVq8&usqp=CAE",
+          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT4FRyNchXrkLLAMDEmVFt3S-A8FAu7sIh1RFzi7_5RTPA5wY7HGbBFFaWhSJRq9wrQDsqYbTBUClNpjwa5WvADSx-YDHmRkcgS-wubBIE&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+    {
+      id: "107",
+      title: "Elegant Pearl Necklace",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSBAzqYJanv6SexUhAlfRbrwRNhjDcbOopUZFz8Q2NKLeZGu0VUrjrAL5BCWf2bIREyCilJeExwME0iysg0jJkMPDCUdkGWGx3ufivk-uRu&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT93fw9-1tMZCt5hIhwjMiM_hK6_PbxxotGbtoSaTbWkGIkGh53UgZRGgEDIGZOraHOS7ZbkR6B0TjyncsEMg-VYS5ihrXLTJXRvlfTIkNCsVyDKqzt6ELk&usqp=CAE",
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS6m_jxBdhjfY4jion3HvwUzl3GEqgwhU1MS8JVNs7EEw2ODM4JTRH_MjHVvoA-mw8SoGeIzdOyHBfLflJogH1Jfr2C2EUxCTN9MV2EVY6GcChYH2CVWPsQ&usqp=CAE",
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQgxTmv8bbV2TnuhW5I23030u0ZQWK3A0DS5xbxlcLqaaVsZ6UKsq6fGbvkeq34iuvcIBCvN4Djy1p_xlJEB9e-KZ_Rj_ZIeB7QdZJnzp4&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+
+    {
+      id: "108",
+      title: "Elegant Pearl Necklace",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTn2TnpZ-akssPeLiy-u2skHsH-iP7U7X8ZTfCjNloI4xBXyUw7TMl8RzR4m5gAkSOOX7pi6sIUDkvaVg6NSt851luj1lX4WDIaGgQmyQY&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTIKRXORo31C-4t-bZ2e9aFW94VWZYv70McTuJYfGchd1sdPO6GKW1daOrzrfmfIZoZVRT3ohYwS74oDgNfpUKVf9NMc7Q-gZZCxBBO5A4&usqp=CAE",
+          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQThXk4yg_B_ewfZ2VyFYupave5PTZzm2vWw_sDGBCYwcurKg6Ev1n-bVIBlQabIRGgXJxdk9ovBPzi73WL_9_OxdtHmSSRIwjRoX2qecF0&usqp=CAE",
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQqKV6g7Qty-2px9jZXBjhRfc5Brm9VHmHbgEawN_cYsr8FT-L4oKynoUO-ucuRckk0Vo0SaOyiwmSy8Q9jbfuIQgQReRFObuaUtL990ek&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+
+    {
+      id: "109",
+      title: "Elegant Pearl Necklace",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRw9y-yMrVRuFt9es-RceMvTZrIPPsVK4BrGWuZ3kqieGSxyeiukzAKyr1DcTbORSIdXffJ4BloUiC1daCqW6jEOghrEQkhXCoQPX7Ft1OAOrew8In3O6ZYgw&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQxt4HYgAKRVCPM5YFfyHZ1HzfvKhniI6a0vkRuw_kzDAYnx0L2AiAhdHW7NT5taNnNaYtu7KtKhijumwDg77ap84Y4PE4Y-jlxRJ0wHsaW&usqp=CAE",
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSy35gR4WcM78NoCHWObm_ulWuoI6uXwUxss-UVPUiDDKO2KBlZBJ1_-rRMkl_Hcj1MecFZRDEyfKXkTqg5rOcs0D57wXRQHpc1HPL5CM4pQlWbqUp8A3YElsXx&usqp=CAE",
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTBGeY3OIGmbiHwuJ8eaKalhHPcrq3-qDpoPHQ1rNL58FfqG-9CFtAN402NUpZ_8zoP_PjEp4bTlN95vbXJi_ULVxTrNQo4LZrJyZdF2anPmL0m1EZPC7E65A&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+
+    {
+      id: "110",
+      title: "Elegant Pearl Necklace",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS6E2IW2n2oicbxpdg97LzKtY87SgAY9jSE4LdpDYFgq13QPiMMmaEwfSCDbBQnURPuJylKeJn8LVCQP2D0tPOrdDDAE7f0JNPp7ipb38cJfvFcEBeqC75EVw&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT3fabe2TjjbuR8hPESwcOh67rhLcR7bjNF06hTPhLBm1rgUnL7M-XaRrXCTm5_N0a3lESKUap_zLPXR-tcpbHJZ-Y9T1MAVYrrRHJcJ1ed&usqp=CAE",
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ-0-SBi3lLWW443xf5GnmSWUS2SAnxJMqEOZE0_FWlwJFQ46t7bTMwJizG1VdJXKaKk3AC7wDFj39FkC6setoyCCY_JqHGToIHXYazbbNIBR1ElNXsMG4L&usqp=CAE",
+          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQiiXyXxkxTGkeaO3TauC7-h_xZPKAnqyy5MXcFO43pW3EyH-4VxTNrXiEFviu-EVX4SoI7_CUnK3YEe0sJmFX22oNOU6DHkT7kQucVAT_LGKtqX5Zer2_xsA&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   ],
+
+
+
+
   customerService: {
     complaintAddress:
       "H&M Hennes & Mauritz Retail Pvt. Ltd., A Wing, D3, 2nd Floor, District Center, Saket, New Delhi 110017, India",

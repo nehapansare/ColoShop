@@ -136,89 +136,91 @@ const products = [
     ];
 
 // Accessories configuration for HomeCart.js
-
 const accessories = [
-    {
+  {
       id: 101,
-      img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQkNp-I4K1ySRWPJ_M0wjNhsFuKLzg6JcSQzmcoRdUC-Qj6_3dhR6OkxixsmtGStM_fHhFsp-raQgVC6AUV1AXiJNzOxiKFMr5BN2YCS98vNzXVqT109Soq6Q&usqp=CAE",        // Replace with your actual image path
-      hoverImg: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTfyHvZo3uF-xvMOq-9tIiSegU2FHVaIfC8m-hFtQUkP7a7bWrchJTb-z2385lz1O9MZcFnwtmIGIzvuvW9plbN1lzE01B4AhaFIuT4aODm&usqp=CAE", // Replace with your actual image path for hover effect
-      title: "Classic Leather Belt",
-      price: "₹499",
-      rating: "4.5"
-    },
-    {
+      img: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSjtN3PHNRWjojOfbg57AC-dwwhFO--UQuHmpmyzd4j_66a31gD-W7E_O6-wKFDg_7Atsxxy_IS7L0cP0Kr5Q6-3kU-tl8Y&usqp=CAE",
+      hoverImg: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ1vG28LFwUboy7wOICGjCtp4Mtpu-LwfqHOB-PNSjFSBg0_909D2HdGdflzU_GuKvuc_4iJ2KVWSElXRCBXmVmOs-Kq5N8Iey2pWFhClmw1e8cScMoxUaPxA&usqp=CAE",
+      title: "Elegant Pearl Necklace",
+      price: "₹1,299",
+      rating: "4.8"
+  },
+  {
       id: 102,
-      img: "path/to/accessory2.png",
-      hoverImg: "path/to/accessory2-hover.png",
+      img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQXtzjDVf2_Exs75uf0jtIgeEpzFSdDg9mVhmKfFrBLWD0zwGA4CUW0Ao4LyURcgKSHxrchyQwjFCFLD7gJakAX3AgI1ItyXOGnoCCiq1T_&usqp=CAE",
+      hoverImg: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRBDrheeBguqLfCyaO5vS0KppT4emNYnB_2unqfyNfXMjdJ-y0b3r5-qU4kWygMI8ZG8LukB9JQZEs8nvdza_ot9_LeMgFkoBQ2HSjtfht7&usqp=CAE",
+      title: "Luxury Handbag",
+      price: "₹2,999",
+      rating: "4.9"
+  },
+  {
+      id: 103,
+      img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS-8_INR4kr7_xqF2iezSBDZo3pLP27Ce7LAG433dpOIphGpMPECCSQ-8oZGa-qNiODUCGXqrkVAbmZKSubmXynwCbyyi0mBZrMSuopsCzA&usqp=CAEE",
+      hoverImg: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSamzZW4MYYffYJyKBJjpJ9WY1v137n-YTW_W2foGefarSPp_S0G7mCEALk0hmBiiFe1WLDvFFc36Q8T1VN_LSeuY_ihJcDGhplLQw7_wmygN7ZKRm7as54&usqp=CAE",
       title: "Stylish Sunglasses",
+      price: "₹899",
+      rating: "4.7"
+  },
+  {
+      id: 104,
+      img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRvPgvqakmTsrbiuBMz0HV8Pk7_4mdjit7vq7brLhkdX6rcb4HbV0vvNW2it4xUFWFg535dbjquWo1b_9cZuoC5pyyp4SkMadVssQsDhB9PgSzsqlfPczos&usqp=CAE",
+      hoverImg: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ3rN8VaeThOe2dA2xij0tA6JmVxVDXS0Em52BKrr5lHyEkJ4wvDUWBgVa_SYcqHgQo42AijR3NojPFtgouyVb25phfJnTwlFG6aVJREjLporyf3wvQWoIt&usqp=CAE",
+      title: "Trendy Hoop Earrings",
+      price: "₹499",
+      rating: "4.6"
+  },
+  {
+      id: 105,
+      img: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRCQ9XELII7HiD-Ab6Qh-mgbmiI-Z-aYe0krcE076ySMVHmY7AhLGuet40-Vp2ENt28kXpiDmaqgNeZZb0XW-O42F_FhWy5xe9spwy8BfXB9zrzPvaOXttX&usqp=CAE",
+      hoverImg: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRCBu7TBuftmrlYm8iV59S5F8hA_Bmce9YchekIqz6C22ap5moVBtX6-k9bUiYM5MCjrCMIky8hViN_1knmaebHOwOlNpLh3MAzhR7kCMWx_SFjdk3q_7uk6A&usqp=CAE",
+      title: "Designer Watch",
+      price: "₹1,999",
+      rating: "4.8"
+  },
+  {
+      id: 106,
+      img: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSpKQYWqa1d12Itjlm14WQFgX7f3bx9GSOw1DSbjQBWOdOnfKw7LPcuMkyhZnQE-Lh_H5bbpnE2ELRMHEZLKFbSDrtqR4B8beZ0mQi5Thgxw28kTN8rsrcEIA&usqp=CAE",
+      hoverImg: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS2smzygaxlx60vJoJKGFr7tIn_FwOsrSicNMsFEdThiiakbZJsOQ5uYZJhD3Gx2SYuvkeGzm2fyGpIWdgZG2y483NADxyoDcUCGthayUo&usqp=CAE",
+      title: "Silk Scarf",
       price: "₹799",
       rating: "4.7"
-    },
-    {
-      id: 103,
-      img: "path/to/accessory3.png",
-      hoverImg: "path/to/accessory3-hover.png",
-      title: "Luxury Wrist Watch",
-      price: "₹1499",
+  },
+  {
+      id: 107,
+      img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSBAzqYJanv6SexUhAlfRbrwRNhjDcbOopUZFz8Q2NKLeZGu0VUrjrAL5BCWf2bIREyCilJeExwME0iysg0jJkMPDCUdkGWGx3ufivk-uRu&usqp=CAE",
+      hoverImg: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT93fw9-1tMZCt5hIhwjMiM_hK6_PbxxotGbtoSaTbWkGIkGh53UgZRGgEDIGZOraHOS7ZbkR6B0TjyncsEMg-VYS5ihrXLTJXRvlfTIkNCsVyDKqzt6ELk&usqp=CAE",
+      title: "Elegant Hair Clips Set",
+      price: "₹299",
+      rating: "4.5"
+  },
+  {
+      id: 108,
+      img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTn2TnpZ-akssPeLiy-u2skHsH-iP7U7X8ZTfCjNloI4xBXyUw7TMl8RzR4m5gAkSOOX7pi6sIUDkvaVg6NSt851luj1lX4WDIaGgQmyQY&usqp=CAE",
+      hoverImg: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTIKRXORo31C-4t-bZ2e9aFW94VWZYv70McTuJYfGchd1sdPO6GKW1daOrzrfmfIZoZVRT3ohYwS74oDgNfpUKVf9NMc7Q-gZZCxBBO5A4&usqp=CAE",
+      title: "Chic Anklet",
+      price: "₹399",
+      rating: "4.6"
+  },
+  {
+      id: 109,
+      img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRw9y-yMrVRuFt9es-RceMvTZrIPPsVK4BrGWuZ3kqieGSxyeiukzAKyr1DcTbORSIdXffJ4BloUiC1daCqW6jEOghrEQkhXCoQPX7Ft1OAOrew8In3O6ZYgw&usqp=CAE",
+      hoverImg: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQxt4HYgAKRVCPM5YFfyHZ1HzfvKhniI6a0vkRuw_kzDAYnx0L2AiAhdHW7NT5taNnNaYtu7KtKhijumwDg77ap84Y4PE4Y-jlxRJ0wHsaW&usqp=CAE",
+      title: "Trendy Tote Bag",
+      price: "₹1,799",
       rating: "4.8"
-    },
-    {
-        id: 104,
-        img: "path/to/accessory3.png",
-        hoverImg: "path/to/accessory3-hover.png",
-        title: "Luxury Wrist Watch",
-        price: "₹1499",
-        rating: "4.8"
-      },
-      {
-        id: 105,
-        img: "path/to/accessory3.png",
-        hoverImg: "path/to/accessory3-hover.png",
-        title: "Luxury Wrist Watch",
-        price: "₹1499",
-        rating: "4.8"
-      }, {
-        id: 106,
-        img: "path/to/accessory3.png",
-        hoverImg: "path/to/accessory3-hover.png",
-        title: "Luxury Wrist Watch",
-        price: "₹1499",
-        rating: "4.8"
-      }, {
-        id: 107,
-        img: "path/to/accessory3.png",
-        hoverImg: "path/to/accessory3-hover.png",
-        title: "Luxury Wrist Watch",
-        price: "₹1499",
-        rating: "4.8"
-      },
-      {
-        id: 108,
-        img: "path/to/accessory3.png",
-        hoverImg: "path/to/accessory3-hover.png",
-        title: "Luxury Wrist Watch",
-        price: "₹1499",
-        rating: "4.8"
-      },
-      {
-        id: 109,
-        img: "path/to/accessory3.png",
-        hoverImg: "path/to/accessory3-hover.png",
-        title: "Luxury Wrist Watch",
-        price: "₹1499",
-        rating: "4.8"
-      },
-      {
-        id: 100,
-        img: "path/to/accessory3.png",
-        hoverImg: "path/to/accessory3-hover.png",
-        title: "Luxury Wrist Watch",
-        price: "₹1499",
-        rating: "4.8"
-      },
+  },
+  {
+      id: 110,
+      img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS6E2IW2n2oicbxpdg97LzKtY87SgAY9jSE4LdpDYFgq13QPiMMmaEwfSCDbBQnURPuJylKeJn8LVCQP2D0tPOrdDDAE7f0JNPp7ipb38cJfvFcEBeqC75EVw&usqp=CAE",
+      hoverImg: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT3fabe2TjjbuR8hPESwcOh67rhLcR7bjNF06hTPhLBm1rgUnL7M-XaRrXCTm5_N0a3lESKUap_zLPXR-tcpbHJZ-Y9T1MAVYrrRHJcJ1ed&usqp=CAE",
+      title: "Elegant Bracelet Set",
+      price: "₹599",
+      rating: "4.7"
+  }
+];
 
-  ];
-  
+// Add up to 108+ items...
+
 
 
 export{products,beauty,accessories}
