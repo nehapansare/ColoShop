@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import config from "../../Config/CartDetail";
 import "./CartDetail.css";
+import Footer from "../Footer/Footer";
 
 function CartDetail() {
   const { id } = useParams();
@@ -69,7 +70,16 @@ function CartDetail() {
           <button className="add-to-cart" onClick={addToCart}>Add to Cart</button>
           <p className="delivery-info">Delivery Time: {product.deliveryTime}</p>
         </div>
+    
       </div>
+      <div className="customer-service">
+  <h3>Customer Service</h3>
+  <p>Complaint Address: {product?.customerService?.complaintAddress || "Not Available"}</p>
+  <p>Phone: {product?.customerService?.telephone || "Not Available"}</p>
+  <p>E-mail Address: {product?.customerService?.email || "Not Available"}</p>
+  <p>Description: {product?.disclaimer || "Not Available"}</p>
+</div>
+<Footer/>
     </div>
   );
 }

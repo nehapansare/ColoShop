@@ -39,6 +39,16 @@ const config = {
         "Common Generic Name: Shirt",
         "Net Quantity: 1 N",
       ],
+
+      customerService: {
+        complaintAddress:
+          "ColoShop Retail Pvt. Ltd., A Wing, D3, 2nd Floor, District Center, Saket, New Delhi 110017, India",
+        telephone: "1800-889-8000",
+        email: "customerservice.in@colo.com",
+      },
+      disclaimer: `This information is based on a sample of the product displayed on the website.
+        There may be changes in the information on the label attached to the product delivered to the
+        customer due to the size chosen, date of import, name of manufacturer (in case of manufacturing in India), country of manufacture, etc.`,
     },
     {
       id: "2",
@@ -72,6 +82,15 @@ const config = {
         "Common Generic Name: Chino Pants",
         "Net Quantity: 1 N",
       ],
+      customerService: {
+        complaintAddress:
+          "ColoShop Retail Pvt. Ltd., A Wing, D3, 2nd Floor, District Center, Saket, New Delhi 110017, India",
+        telephone: "1800-889-8000",
+        email: "customerservice.in@colo.com",
+      },
+      disclaimer: `This information is based on a sample of the product displayed on the website.
+        There may be changes in the information on the label attached to the product delivered to the
+        customer due to the size chosen, date of import, name of manufacturer (in case of manufacturing in India), country of manufacture, etc.`,
     },
     {
       id: "11",
@@ -721,47 +740,9 @@ const config = {
         "Common Generic Name: Cardigan Sweater",
       ],
     },
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   ],
 
-
-
-
-  customerService: {
-    complaintAddress:
-      "H&M Hennes & Mauritz Retail Pvt. Ltd., A Wing, D3, 2nd Floor, District Center, Saket, New Delhi 110017, India",
-    telephone: "1800-889-8000",
-    email: "customerservice.in@hm.com",
-  },
-  disclaimer: `This information is based on a sample of the product displayed on the website.
-    There may be changes in the information on the label attached to the product delivered to the
-    customer due to the size chosen, date of import, name of manufacturer (in case of manufacturing in India), country of manufacture, etc.`,
 };
 
 export default config;

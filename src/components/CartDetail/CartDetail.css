@@ -181,3 +181,13 @@
   .size-options{
     color: black;
   }
+
+  .customer-service {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  

@@ -75,7 +75,7 @@ function Shop() {
               <div key={item.id} className="cart-item-wrapper">
                 <Link to={`/cartdetail/${item.id}`} className="cart-link">
                   <div className="cart-item">
-                    <div className="image-container1">
+                    <div className="image-container2">
                       <img src={item.imgUrl} alt={item.title} className="product-image" />
                       <img src={item.hoverImgUrl} alt={item.title} className="product-image-hover" />
                       {isInCart && <div className="in-cart-indicator"><span>✓ In Cart</span></div>}
