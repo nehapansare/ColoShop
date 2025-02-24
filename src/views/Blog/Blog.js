@@ -19,7 +19,7 @@ const Blog = () => (
           <h2>{title}</h2>
           <p>{excerpt}</p>
           <Link to={`/blogdetail/${id}`}>
-            <button>Read More</button>
+            <button className='blog-btn'>Read More</button>
           </Link>
         </div>
       </div>

@@ -157,7 +157,7 @@ const handleContinuePayment = () => {
           />
           <div className="image-overlay">
           <button 
-            
+            className="order-btn"
               onClick={() => navigate(-1)}
             >
             <span>View Details</span>

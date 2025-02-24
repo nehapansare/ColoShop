@@ -411,7 +411,7 @@
   gap: 16px;
 }
 
-button {
+.order-btn {
   padding: 15px 24px;
   border: none;
   border-radius: 12px;
@@ -443,16 +443,16 @@ button {
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-button:hover .btn-text {
+.order-button:hover .btn-text {
   transform: translateX(-6px);
 }
 
-button:hover .btn-icon {
+.order-btn:hover .btn-icon {
   opacity: 1;
   transform: translateX(0);
 }
 
-button::before {
+.order-btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -464,7 +464,7 @@ button::before {
   transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-button:hover::before {
+.order-btn:hover::before {
   transform: translateX(0);
 }
 

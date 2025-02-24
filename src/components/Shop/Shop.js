@@ -107,7 +107,7 @@ function Shop() {
                 </div>
                 <div className="ratings">
                   <div className="rating-badge">
-                    <span className="rating-value">⭐ {item.rating}</span>
+                    <span className="rating-value">⭐ {item.reviews}</span>
                   </div>
                   <span className="review-count">759 Reviews</span>
                 </div>
