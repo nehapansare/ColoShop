@@ -4,8 +4,10 @@ import "./Shop.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { CART } from "../../Config/Cart";
+import { useNavigate } from "react-router-dom";
 
 function Shop() {
+  const navigate = useNavigate();
   const [cartItems, setCartItems] = useState(() => {
     const savedCart = localStorage.getItem("cartItems");
     return savedCart ? JSON.parse(savedCart) : [];
@@ -40,7 +42,7 @@ function Shop() {
 
   const calculateTotalPrice = () => {
     return cartItems.reduce((total, item) => {
-      let price = parseFloat(item.price.replace(/[^0-9.]/g, ""));
+      let price = parseInt(item.price.replace(/[^0-9.]/g, ""));
       return total + (isNaN(price) ? 0 : price);
     }, 0);
   };
@@ -54,6 +56,7 @@ function Shop() {
     console.log("Payment Details:", paymentDetails);
     alert("Payment details submitted successfully!");
     setIsPaymentFormOpen(false);
+    navigate("/payment"); 
   };
 
   return (
