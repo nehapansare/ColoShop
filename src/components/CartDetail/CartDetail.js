@@ -12,11 +12,13 @@ function CartDetail() {
   const [mainImage, setMainImage] = useState(product ? product.images.main : "");
   const [selectedSize, setSelectedSize] = useState(null);
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cart")) || []);
+  const [quantity, setQuantity] = useState(1); // Quantity state
 
   useEffect(() => {
     if (product) {
       setMainImage(product.images.main);
       setSelectedSize(null);
+      setQuantity(1); // Reset quantity when changing products
     }
   }, [product]);
 
@@ -30,13 +32,21 @@ function CartDetail() {
       return;
     }
 
-    const cartItem = { id: product.id, title: product.title, price: product.price, image: mainImage, size: selectedSize };
+    const cartItem = {
+      id: product.id,
+      title: product.title,
+      price: product.price,
+      image: mainImage,
+      size: selectedSize,
+      quantity,
+    };
+
     const updatedCart = [...cart, cartItem];
     setCart(updatedCart);
     localStorage.setItem("cart", JSON.stringify(updatedCart));
 
     // Navigate to the Order Summary page
-    navigate("/ordersummary", { state: { product, selectedSize } });
+    navigate("/ordersummary", { state: { product, selectedSize, quantity } });
   };
 
   return (
@@ -67,19 +77,27 @@ function CartDetail() {
             ))}
           </div>
 
+          {/* Quantity Counter */}
+          <div className="quantity-counter">
+            <button onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}>➖</button>
+            <span>{quantity}</span>
+            <button onClick={() => setQuantity(quantity + 1)}>➕</button>
+          </div>
+
           <button className="add-to-cart" onClick={addToCart}>Add to Cart</button>
           <p className="delivery-info">Delivery Time: {product.deliveryTime}</p>
         </div>
-    
       </div>
+
       <div className="customer-service">
-  <h3>Customer Service</h3>
-  <p>Complaint Address: {product?.customerService?.complaintAddress || "Not Available"}</p>
-  <p>Phone: {product?.customerService?.telephone || "Not Available"}</p>
-  <p>E-mail Address: {product?.customerService?.email || "Not Available"}</p>
-  <p>Description: {product?.disclaimer || "Not Available"}</p>
-</div>
-<Footer/>
+        <h3>Customer Service</h3>
+        <p>Complaint Address: {product?.customerService?.complaintAddress || "Not Available"}</p>
+        <p>Phone: {product?.customerService?.telephone || "Not Available"}</p>
+        <p>E-mail Address: {product?.customerService?.email || "Not Available"}</p>
+        <p>Description: {product?.disclaimer || "Not Available"}</p>
+      </div>
+
+      <Footer />
     </div>
   );
 }
