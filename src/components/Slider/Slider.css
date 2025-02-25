@@ -84,3 +84,25 @@
   background: rgba(0, 0, 0, 0.4);
   z-index: 1000;
 }
+.quantity-controls {
+  display: flex;
+  flex-direction: row; /* Ensures horizontal alignment */
+  align-items: center; /* Centers items vertically */
+  gap: 10px;         /* Optional: adds space between elements */
+}
+
+
+.quantity-counter button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.quantity-counter span {
+  font-size: 16px;
+  font-weight: bold;
+}
