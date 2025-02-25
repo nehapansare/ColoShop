@@ -6,8 +6,8 @@ import Footer from "../Footer/Footer";
 import { CART } from "../../Config/Cart";
 
 // Reusable components:
-import Slider from "../Slider/Slider"; // This component shows the cart sidebar
-import Popup from "../Popup/Popup"; // This component shows the payment form popup
+import Slider from "../Slider/Slider"; // Cart sidebar
+import Popup from "../Popup/Popup"; // Payment form popup
 
 function Shop() {
   const navigate = useNavigate();
@@ -32,11 +32,11 @@ function Shop() {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
 
-  // Function to add an item to the cart
+  // Function to add an item to the cart (initialize quantity to 1)
   const addToCart = (e, item) => {
     e.preventDefault();
     if (cartItems.some((cartItem) => cartItem.id === item.id)) return;
-    setCartItems((prevCartItems) => [...prevCartItems, item]);
+    setCartItems((prevCartItems) => [...prevCartItems, { ...item, quantity: 1 }]);
     setIsCartOpen(true);
   };
 
@@ -48,11 +48,20 @@ function Shop() {
     );
   };
 
-  // Function to calculate the total price of items in the cart
+  // Function to update the quantity of an item in the cart
+  const updateQuantity = (id, newQuantity) => {
+    setCartItems((prevItems) =>
+      prevItems.map((item) =>
+        item.id === id ? { ...item, quantity: Math.max(newQuantity, 1) } : item
+      )
+    );
+  };
+
+  // Function to calculate the total price (account for quantity)
   const calculateTotalPrice = () => {
     return cartItems.reduce((total, item) => {
       let price = parseInt(item.price.replace(/[^0-9.]/g, ""));
-      return total + (isNaN(price) ? 0 : price);
+      return total + (isNaN(price) ? 0 : price * (item.quantity || 1));
     }, 0);
   };
 
@@ -75,7 +84,7 @@ function Shop() {
       <div className="shop-container">
         <Navbar />
 
-        {/* Cart icon on right side showing cart count */}
+        {/* Cart icon showing cart count */}
         <button
           className="cart-toggle-btn"
           onClick={() => setIsCartOpen(!isCartOpen)}
@@ -159,18 +168,19 @@ function Shop() {
         </div>
       </div>
 
-      {/* Reusable Slider (cart sidebar) */}
+      {/* Cart Sidebar (Slider) */}
       {isCartOpen && (
         <Slider
           cartItems={cartItems}
           removeFromCart={removeFromCart}
+          updateQuantity={updateQuantity}  
           calculateTotalPrice={calculateTotalPrice}
           onClose={() => setIsCartOpen(false)}
           onPaymentClick={() => setIsPaymentFormOpen(true)}
         />
       )}
 
-      {/* Reusable Popup (payment form popup) */}
+      {/* Payment Form Popup */}
       <Popup
         isOpen={isPaymentFormOpen}
         onClose={() => setIsPaymentFormOpen(false)}
