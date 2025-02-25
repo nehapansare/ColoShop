@@ -1,0 +1,86 @@
+/* src/components/CartSlider/CartSlider.css */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 1001;
+  overflow-y: auto;
+}
+
+/* When open, slide the cart in */
+.cart-sidebar.open {
+  right: 0;
+}
+
+.cart-header {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.empty-cart {
+  padding: 16px;
+}
+
+.cart-items {
+  padding: 16px;
+}
+
+.cart-item-sidebar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cart-item-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 8px;
+}
+
+.cart-item-info p {
+  margin: 0;
+}
+
+.cart-total {
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.checkout-section {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.checkout-btn {
+  padding: 8px 16px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
