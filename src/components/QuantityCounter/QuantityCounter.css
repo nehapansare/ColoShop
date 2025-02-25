@@ -1,0 +1,29 @@
+.counter-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .increase-btn {
+    background-color: green;
+    color: white;
+  }
+  
+  .decrease-btn {
+    background-color: red;
+    color: white;
+  }
+  
+  .reset-btn {
+    background-color: gray;
+    color: white;
+  }
+  
