@@ -2,6 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import blogPosts from '../../Config/BlogData'; // Import blog data
 import './BlogDetail.css';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 const BlogDetail = () => {
   const { id } = useParams(); // Get ID from URL
@@ -12,6 +14,8 @@ const BlogDetail = () => {
   }
 
   return (
+    <div >
+      <Navbar/>
     <div className="blog-detail-container">
       <h1>{blog.title}</h1>
       <p><strong>By:</strong> {blog.author}</p>
@@ -67,6 +71,8 @@ const BlogDetail = () => {
         <h2>Sustainable &amp; Ethical Fashion</h2>
         <p>{blog.sustainableEthicalFashion}</p>
       </section>
+    </div>
+    <Footer/>
     </div>
   );
 };
