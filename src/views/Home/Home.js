@@ -26,31 +26,41 @@ function Home() {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
 
-  // Function to add an item to the cart
+
   const addToCart = (e, product) => {
     e.preventDefault();
     if (cartItems.some((item) => item.id === product.id)) return;
-    // Simulate network delay before adding the item (if needed)
     setTimeout(() => {
-      setCartItems((prev) => [...prev, product]);
+       setCartItems((prev) => [...prev, { ...product, quantity: 1}]);
     }, 600);
   };
-
-  // Function to remove an item from the cart
+  
   const removeFromCart = (e, productId) => {
     e.preventDefault();
     setCartItems((prev) => prev.filter((item) => item.id !== productId));
   };
 
-  // Function to calculate the total price of items in the cart
+  const updateQuantity = (id, newQuantity) => {
+    setCartItems((prevItems) =>
+      prevItems.map((item) =>
+        item.id === id ? { ...item, quantity: newQuantity > 1 ? newQuantity : 1 } : item
+      )
+    );
+  };
+  
+
+  
   const calculateTotalPrice = () => {
     return cartItems.reduce((total, item) => {
-      let price = parseInt(item.price.replace(/[^0-9.]/g, ""));
-      return total + (isNaN(price) ? 0 : price);
+      
+      const price = parseFloat(item.price.replace(/[^0-9.]/g, ""));
+     
+      return total + (isNaN(price) ? 0 : price * item.quantity);
     }, 0);
   };
+  
 
-  // Countdown timer (3 days from now)
+ 
   const [timeLeft, setTimeLeft] = useState({
     hours: "",
     minutes: "",
@@ -80,7 +90,7 @@ function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  // (Optional) Payment form state and handlers:
+  
   const [paymentDetails, setPaymentDetails] = useState({
     name: "",
     email: "",
@@ -98,13 +108,13 @@ function Home() {
     console.log("Payment Details:", paymentDetails);
     alert("Payment details submitted successfully!");
     setIsPaymentFormOpen(false);
-    // Navigate to payment page if required
-    // navigate("/payment");
+  
+   
   };
 
   return (
     <div className="home-page">
-      {/* Floating Cart Badge */}
+
       <button
           className="cart-toggle-btn"
           onClick={() => setIsCartOpen(!isCartOpen)}
@@ -112,18 +122,18 @@ function Home() {
           <i className="fa fa-shopping-cart"></i> {cartItems.length}
         </button>
 
-      {/* Reusable CartSlider (cart sidebar) */}
+
       {isCartOpen && (
         <Slider
           cartItems={cartItems}
           removeFromCart={removeFromCart}
           calculateTotalPrice={calculateTotalPrice}
+          updateQuantity={updateQuantity}  
           onClose={() => setIsCartOpen(false)}
           onPaymentClick={() => setIsPaymentFormOpen(true)}
         />
       )}
 
-      {/* Reusable Popup (payment form popup) */}
       <Popup
         isOpen={isPaymentFormOpen}
         onClose={() => setIsPaymentFormOpen(false)}
@@ -141,7 +151,6 @@ function Home() {
           </button>
         </div>
 
-        {/* Our Products Section */}
         <div id="product">
           <p className="p1">Our Products</p>
           <Navbar2 />
@@ -225,7 +234,7 @@ function Home() {
           </div>
         </div>
 
-        {/* Sale Section with Countdown */}
+    
         <div className="sale-container">
           <div className="sale-img-wrapper">
             <img src={saleImg} alt="Sale" className="sale-img" />
@@ -242,7 +251,7 @@ function Home() {
           </div>
         </div>
 
-        {/* Our Beauty Products Section */}
+
         <div id="beauty">
           <p className="p1">Our Beauty Products</p>
           <div className="cart-container2">
@@ -325,7 +334,7 @@ function Home() {
           </div>
         </div>
 
-        {/* Our Accessories Section */}
+   
         <div id="accessories">
           <p className="p1">Our Accessories</p>
           <div className="cart-container2">
