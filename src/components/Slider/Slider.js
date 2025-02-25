@@ -1,10 +1,10 @@
-// src/components/CartSlider/CartSlider.jsx
 import React from "react";
 import "./Slider.css";
 
 const Slider = ({
   cartItems,
   removeFromCart,
+  updateQuantity,
   calculateTotalPrice,
   onClose,
   onPaymentClick,
@@ -32,7 +32,26 @@ const Slider = ({
                 />
                 <div className="cart-item-info">
                   <p>{item.title}</p>
-                  <span>₹{item.price}</span>
+                  {/* Display updated price based on quantity */}
+                  <span>
+                    ₹
+                    {parseInt(item.price.replace(/[^0-9.]/g, "")) *
+                      item.quantity}
+                  </span>
+                  <div className="quantity-controls">
+                    <button
+                      onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                      disabled={item.quantity <= 1}
+                    >
+                      -
+                    </button>
+                    <span>{item.quantity}</span>
+                    <button
+                      onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                    >
+                      +
+                    </button>
+                  </div>
                 </div>
                 <button
                   onClick={(e) => removeFromCart(e, item.id)}
