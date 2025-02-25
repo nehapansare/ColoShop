@@ -86,11 +86,13 @@ function Shop() {
 
         {/* Cart icon showing cart count */}
         <button
-          className="cart-toggle-btn"
-          onClick={() => setIsCartOpen(!isCartOpen)}
-        >
-          <i className="fa fa-shopping-cart"></i> {cartItems.length}
-        </button>
+  className="cart-toggle-btn"
+  onClick={() => setIsCartOpen(!isCartOpen)}
+>
+  🛒
+  <span className="cart-count">{cartItems.length}</span>
+</button>
+
 
         <div className="cart-container">
           {CART.map((item) => {
