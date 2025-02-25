@@ -115,12 +115,13 @@ function Home() {
   return (
     <div className="home-page">
 
-      <button
-          className="cart-toggle-btn"
-          onClick={() => setIsCartOpen(!isCartOpen)}
-        >
-          <i className="fa fa-shopping-cart"></i> {cartItems.length}
-        </button>
+<button
+  className="cart-toggle-btn"
+  onClick={() => setIsCartOpen(!isCartOpen)}
+>
+  🛒
+  <span className="cart-count">{cartItems.length}</span>
+</button>
 
 
       {isCartOpen && (
