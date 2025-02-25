@@ -5,6 +5,7 @@
     justify-content: center; /* Center align cards */
     gap: 20px;
     padding: 20px;
+    margin-top: 120px;
 }
 
 /* Blog Card */
@@ -31,13 +32,14 @@
 
 /* Button */
 .blog-btn {
-    background-color: green;
+    background-color: #222;
     color: white;
     padding: 8px 16px;
     border: none;
     cursor: pointer;
     margin-top: 10px;
 }
+
 
 /* Responsive Layout */
 @media (max-width: 1024px) {
