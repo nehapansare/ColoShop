@@ -338,7 +338,7 @@ margin-top: 20px;
     font-size: 12px;
     font-weight: bold;
   }
-  @media (min-width: 600px) and (max-width: 760px) {
+  @media (min-width: 500px) and (max-width: 760px) {
     .home-container {
       width: 100%;
       padding: 0; /* Remove padding for full-bleed effect */
