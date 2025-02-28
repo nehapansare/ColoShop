@@ -338,4 +338,47 @@ margin-top: 20px;
     font-size: 12px;
     font-weight: bold;
   }
+  @media (min-width: 600px) and (max-width: 760px) {
+    .home-container {
+      width: 100%;
+      padding: 0; /* Remove padding for full-bleed effect */
+      margin: 0;
+      box-sizing: border-box;
+    }
   
+    .cart-container2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  
+    .cart-item-wrapper {
+      width: 100%;
+    }
+  
+    /* Make the image span the full viewport width without any side space */
+    .full-screen-img {
+      display: block;
+      width: 100vw;
+      margin-right: calc(60% - 60vw);
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  
+  
+  
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  .home-page {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .cart-item-wrapper {
+    width: calc(50% - 16px);
+  }
+}
+
