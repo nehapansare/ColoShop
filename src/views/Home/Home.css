@@ -382,7 +382,7 @@ margin-top: 20px;
     /* Full-width image styling for 300px screens */
     .full-screen-img {
       display: block;
-      width: 100vw;
+      width: 100vh;
       height: auto;
       object-fit: cover;
       margin-left: calc(50% - 50vw);
