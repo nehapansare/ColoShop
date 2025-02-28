@@ -264,7 +264,7 @@ function Home() {
                 <div key={product.id} className="cart-item-wrapper">
                   <Link to={`/cartdetail/${product.id}`} className="cart-link">
                     <div className="cart-item">
-                      <div className="image-container1">
+                      <div className="image-container2">
                         <img
                           src={product.img}
                           alt={product.title}

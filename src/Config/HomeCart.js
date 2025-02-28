@@ -88,48 +88,80 @@ const products = [
       { 
         id: 51, 
         img: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRZvEBPFIsucF-dKl7xhIBX8WhXW0FSH3XV5GkkOBvMXadV0caxtmFUpmiU3bzBrAN11PWST-ufG4ifZaq7QdrIl44RJ_HQQheK_QQRMSJyCt8afXb7X9EfMA', 
-        hoverImg: 'https://via.placeholder.com/300?text=Hover+Beauty+1',
-        title: 'Product 1', 
+        hoverImg: 'https://images.mamaearth.in/catalog/product/8/_/8_68.jpg?format=auto&height=600',
+        title: 'Moisture Matte Longstay Lipstick - 2g', 
         price: '$19.99', 
         rating: 4.5 
       },
       { 
         id: 52, 
-        img: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRVTnH_w1r5Y-zrs_9AMYkzQzYhf8kH1Xm7d2OdB9e8Y4bHf9HLEs9_0S9hswlTMWna30yBbmWDzw-_f5JNQRKUJJaF5Uw7J-u8Ois-RrjNQ_nXr-2a0knA&usqp=CAE', 
-        hoverImg: 'https://via.placeholder.com/300?text=Hover+Beauty+2',
-        title: 'Product 2', 
+        img: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTb_DbgO9xiArEgj7_TX-yWrsb-8sQqHc_QEchfiHjdDi1WE9SKE7BjnsrdTlDzVuJj8Mgh1W8jiJcQ7Mq_ZgwNhr2EYhaCsVa91pWNmpQzNhgkcIVNqXNm8g&usqp=CAE', 
+        hoverImg: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSmaEmABRHSc5uD0Iq8CAthn8wfZXCgtKYSp3utLG-WXBa035czEC-q30nFXyIMpuP7M1C29qUTHA1IKctHTLXi5R9zTW1JsrvyRrLBST7t78KhbG4vxIoW6g&usqp=CAE',
+        title: '	Swiss Beauty Pure Matte Lipstick 230 Brandy Harrington 3.8g', 
         price: '$24.99', 
         rating: 4 
       },
       { 
         id: 53, 
         img: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS3CvE8USpoywCBDDm7zZVce5RtbZxhZcjkbQHNO2P_rGIK42D53AK5JM1dN4cUi_ycc-arnpNjCSWxmv3NHtbz59EwHba7ezLtHQr2laZPGETc-sb0HhcQdg', 
-        hoverImg: 'https://via.placeholder.com/300?text=Hover+Beauty+3',
-        title: 'Product 3', 
+        hoverImg: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS0P-upeDsSMBcQASG5OVQOu7klDwjBPv1e-dIp4G03aX54_Ogv09K38aJcS2XOUJKcFM1KBus5iItcjxbVfH5Yxf_zkzemSvXIKwt08M2RhU79a9cFUrqfUw&usqp=CAE',
+        title: '	Swiss Beauty Power Stage Eyeshadow Palette - Royal Tribe (25 g)', 
         price: '$29.99', 
         rating: 5 
       },
       { 
         id: 54, 
         img: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRVXGOGwpTKkJpJr_9RF4y-_DMuRklkFlJgyJYx1l1ONNtzMBx1Ln5Igec7SdaG5f9eU_fhtYEX0JLgc2pezRlIsPqS9k6PZNZY_qZhHGzhlLB5ucw8JNg_Wg&usqp=CAE', 
-        hoverImg: 'https://via.placeholder.com/300?text=Hover+Beauty+4',
-        title: 'Product 4', 
+        hoverImg: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRbV9xVPD0-UXFZE75vpCV6nyof-97UuQ1lD4wtNHYbEihtyTlG8FKkyyKUeGtPiNt1ZrfvsvB2Nn8e2teLgJoBk9wqfc0I5xVnc3lcToHPsv0EGwRd1xzd&usqp=CAE',
+        title: '	Swiss Beauty Cream It Up Blush - Natural Flush (10 ml)', 
         price: '$14.99', 
         rating: 4.2 
       },
       { 
         id: 55, 
         img: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR7wA9hxYlJkNN5qWOsOrAEYGHRlUqZnx3QstoipkDsk1ZWUFj01rWce74DMRifUmkXlNloMyD-TrEqUl1frd4cZbzdc8p1up2qvFuN0gcjwE3OY5CqYA-ENQ&usqp=CAE', 
-        hoverImg: 'https://via.placeholder.com/300?text=Hover+Beauty+5',
-        title: 'Product 5', 
+        hoverImg: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTsr-fqFarlgP0MtFd7oLBF4ZtCZ4k-I_UiTXRmpaSoh2ASHyb1I3JDuRCXWn6whypEtpZj1DGS3xmCZvEXnnU0PCgvqGRjP9mcnflGR-c&usqp=CAE',
+        title: 'MAYBELLINE New YORK Instant Age Rewind Eraser 120', 
         price: '$34.99', 
         rating: 3.8 
       },
       { 
         id: 56, 
         img: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRIH7Xm3-0M08l-l_lpenLPQPJOao3M2iR0PXZTjPvSKxvFHL6yk0kBC-VpWw73kXKmNDsrr_MYKCXvVKTeSO57HTlqkzdQcEdpUqgnVh8fP8N9T-JlRamX&usqp=CAE', 
-        hoverImg: 'https://via.placeholder.com/300?text=Hover+Beauty+6',
-        title: 'Product 6', 
+        hoverImg: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR5vJNMVDC3f5bnCOS_AYsUKJpCIkPtEC2mv0IDyMbSLbOTDwmzVv9kz6YsyeMlrvvnKZfMOtkq4kAEFeSkkf1hbCbwyuHxtBI9y0Fd-RgSn5VTaQbYTliEYA&usqp=CAE',
+        title: '	Maybelline New York Fit Me Matte + Poreless Foundation (30ml) ', 
+        price: '$39.99', 
+        rating: 4.7 
+      },
+      { 
+        id: 57, 
+        img: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTkCWTSAOQ-76eZxPyNy2SDmBRQoDxRq7AO96ygzMAjfek5woIgH_ojv4Ri4C82nBrmMxH4238ZcDVp3r8K38rTxRQKOcHyV-JoCMXIJGg&usqp=CAE', 
+        hoverImg: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQqq3aviIzSLn6DmVLqz-lc9fuNp1PtjbtFirIr_KoZSqR5iAjMhkGm9q_xwu9Ei18pSVauIjk4WMjjHztzws6nZCzaIAXBcg5fRN-fFgdELfjKwIXDsuEv&usqp=CAE',
+        title: 'Swiss Beauty Natural Makeup Fixer ', 
+        price: '$39.99', 
+        rating: 4.7 
+      },
+      { 
+        id: 58, 
+        img: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQGY-NCXrRwboneS2gtyZ9oKKA0a01_qtoazcZSz0gI0ygu3zGWE0Pnr2Xj-UVF3cbAnJsCYlkIlFd4Ffu-tb39iG7-mZa_3WLu40sar_xsi6oP65lcQHxq&usqp=CAE', 
+        hoverImg: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRSmASPP92fTRMliGzl3v4KwjS7jC4kWfi6l4R4sMkDjbvMf8CucoJM3yTtaMuYHkmFZHnANM_BV6-a4ftyfhm-k4IHP-KwJw&usqp=CAE',
+        title: '	MARS Fabulash Volumising Mascara', 
+        price: '$39.99', 
+        rating: 4.7 
+      },
+      { 
+        id: 59, 
+        img: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRdg6Yjr8UQTngTa_t0VYQ236t6RlQ-J0QB2-1K_JCkVquSrIrkdSFy2QB5OBPaTvNYxBlMAZYfsIS3RN3Sj1wqowMggP58i34h3ZNP2K9WnV_9dj25Efw&usqp=CAE', 
+        hoverImg: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRm7-Iyca1n0BVVlqOcx0oYCRWZnkB3lZIwHs7BU-xWdk6K6UhPz7yceBormQ3nbjK8PBIYBjXnB1RH45GHz0_6wx0rG6mbBzbb95D10nKbOrHommkVTRd2&usqp=CAE',
+        title: '	Maybelline New York Colossal Kajal, Black ', 
+        price: '$39.99', 
+        rating: 4.7 
+      },
+      { 
+        id: 60, 
+        img: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSv1Ub9F9d1UB-8Rk2RDP4MtPcA7Dz-CL1JRG2AhutscXLrfHxgDRzQzB9etH0hp35_XFXW5Xs69Wm903CRqCBblJNuR-ok7gfaZxET_gk1mzbB0TpTVbY0&usqp=CAE', 
+        hoverImg: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSv80iZidNQPVtlvtnDEqgOu80uU119zq8pvZplbRCCglVqpsQt6sh6a-EmhT28XHs-vSG8LSdpXiSbfKYlVXY6p2UgAPrrwzG8hRmgFZtWxFsn7yfQSZg-YQ&usqp=CAE',
+        title: '	Maybelline New York Face Studio Master Chrome Metallic Highlighter  ', 
         price: '$39.99', 
         rating: 4.7 
       },

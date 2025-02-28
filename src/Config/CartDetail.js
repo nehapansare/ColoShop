@@ -740,8 +740,328 @@ const config = {
         "Common Generic Name: Cardigan Sweater",
       ],
     },
-  
-  ],
+    {
+      id: "51",
+      title: "Moisture Matte Longstay Lipstick - 2g",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://images.mamaearth.in/catalog/product/1/_/1_62.jpg?format=auto&height=600",
+        thumbnails: [
+          "https://images.mamaearth.in/catalog/product/5/_/5_133.jpg?format=auto&height=600",
+          "https://images.mamaearth.in/catalog/product/4/_/4_151.jpg?format=auto&height=600",
+          "https://images.mamaearth.in/catalog/product/8/_/8_68.jpg?format=auto&height=600",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+    {
+      id: "52",
+      title: "	Swiss Beauty Pure Matte Lipstick 230 Brandy Harrington 3.8g",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTb_DbgO9xiArEgj7_TX-yWrsb-8sQqHc_QEchfiHjdDi1WE9SKE7BjnsrdTlDzVuJj8Mgh1W8jiJcQ7Mq_ZgwNhr2EYhaCsVa91pWNmpQzNhgkcIVNqXNm8g&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSmaEmABRHSc5uD0Iq8CAthn8wfZXCgtKYSp3utLG-WXBa035czEC-q30nFXyIMpuP7M1C29qUTHA1IKctHTLXi5R9zTW1JsrvyRrLBST7t78KhbG4vxIoW6g&usqp=CAE",
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQHcxR4sQUndIG-tQWWRidK_I0qwvmpmAfPgo5AVdzO0u6FxyTaDa8nAez9YBAq6O7uEw9UVdVQ8tHfOPVAvE6ThC8EyCGa9HutkvRlI8jgnT1tZfuHXKpt&usqp=CAE",
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTb_DbgO9xiArEgj7_TX-yWrsb-8sQqHc_QEchfiHjdDi1WE9SKE7BjnsrdTlDzVuJj8Mgh1W8jiJcQ7Mq_ZgwNhr2EYhaCsVa91pWNmpQzNhgkcIVNqXNm8g&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+    {
+      id: "53",
+      title: "	Swiss Beauty Power Stage Eyeshadow Palette - Royal Tribe (25 g)",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTnxJb1lEMnriA4SVU6818C0btA92HiH5wjTS6vPglSWzuwX9Xn1JIsT8iNf6vqUXh5VlEmM-ZMmc5VxhIIrwvDJu6JVPVSqAm06GcXy6uP9-ub7w1aYCNVcw&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS0P-upeDsSMBcQASG5OVQOu7klDwjBPv1e-dIp4G03aX54_Ogv09K38aJcS2XOUJKcFM1KBus5iItcjxbVfH5Yxf_zkzemSvXIKwt08M2RhU79a9cFUrqfUw&usqp=CAE",
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQmt8hxEkRmItYLyQT3zSM9pZWpRK_KAjKfPyV05S6bOSLkZn66xJOUpQaLatW4jr7j5QV1soUYwRavSqzAN1qR1QHAK3WL-78P8gvbtAu2dCY7ZkAILBkinA&usqp=CAE",
+          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRw1QzNmQ86KSehPDJS6-idhgJtfbku2wj-gEzfazusZVPowPYtRHc62-Pya0Hjt5VZHbOze-djBBLKNbotydweliLOhKJegFhkJMth3Xqi&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+    {
+      id: "54",
+      title: "	Swiss Beauty Cream It Up Blush - Natural Flush (10 ml)",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR2YQKt_4QEpY70sttIs8OKlbD_xL1Q-FKER4olDhD_tPg4QyWPjrE_3P1iS9ed0SR6S3BKx75rRG9va0PFnJVi3iVRoAvP5fK93sVLDjumJ0ogcYFE-jzqBg&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRbV9xVPD0-UXFZE75vpCV6nyof-97UuQ1lD4wtNHYbEihtyTlG8FKkyyKUeGtPiNt1ZrfvsvB2Nn8e2teLgJoBk9wqfc0I5xVnc3lcToHPsv0EGwRd1xzd&usqp=CAE",
+          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQHTOLFjbgvuGTjTdXE9QQP6MIbKgvnRud3q0eDaczKuzwJfDRV9Ri14cwmAuicdtSpn9eZ6GjqnZRi58jS1BunAhZZxrIVjsEzuyyAZEhGRsWys6dj8ULv&usqp=CAE",
+          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQJX3EjnGFS8zBUaJEy1ynXwrZLVU-3bvdBsbnXBl7OrjpG7GquFHsbgeR7auIrx-pFNb6XeWASEfJIkC085WZuPMkPuA-x0MYUVRzamYWiEu3fqBTtRtOrzQ&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+    {
+      id: "55",
+      title: "	MAYBELLINE New YORK Instant Age Rewind Eraser 120",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS6E2IW2n2oicbxpdg97LzKtY87SgAY9jSE4LdpDYFgq13QPiMMmaEwfSCDbBQnURPuJylKeJn8LVCQP2D0tPOrdDDAE7f0JNPp7ipb38cJfvFcEBeqC75EVw&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR2lCNHQqWreXvA6qfu3-AW0rX15283fwJyGUs_3WSzYsnbArFBpY85hI_5-DpiIe3sqgdrQ3puMG2K8SO_wfVp1LScdafdXEh0gzBYY9YN&usqp=CAE",
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR7P6JSexNlgZUnhn_4IdPneVdqsQFW1NY-GtbB44EgT0MO_NCaPxmb9dWH91wVry1Vq4VCAzhYtn0mG8pWC1pD5HftUIOfX_B20QaMb8M&usqp=CAE",
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRvDsYQvBGAYcRyKAsIp8XWeCv9JGcBo4rZflm3fSFWTS6GOMymCu4PM0XXQzyJP1yc8XAFCoLD8MGtD-ugpgBSzndCjyfYF4-NJt2Sxv9bZBh2xtpnmc62hw&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+    {
+      id: "56",
+      title: "	Maybelline New York Fit Me Matte + Poreless Foundation (30ml) ",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQh9oF9ANCyELzvaQDx0496z29jT82BDx3IvvM6aJg-doixJwA9QnCVn_1BjAK4D5B5e0pgLhkAqdExcMmKv4nSAAy7W9FhJZpJIE6W-PnkG24BJi5qXLgL&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR5vJNMVDC3f5bnCOS_AYsUKJpCIkPtEC2mv0IDyMbSLbOTDwmzVv9kz6YsyeMlrvvnKZfMOtkq4kAEFeSkkf1hbCbwyuHxtBI9y0Fd-RgSn5VTaQbYTliEYA&usqp=CAE",
+          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQh9oF9ANCyELzvaQDx0496z29jT82BDx3IvvM6aJg-doixJwA9QnCVn_1BjAK4D5B5e0pgLhkAqdExcMmKv4nSAAy7W9FhJZpJIE6W-PnkG24BJi5qXLgL&usqp=CAE",
+          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRB_nU-vqdQ9LLyXmvr-anexMJTuYJ1tUxdGESNhDEKfHkfBq_fBhCTQXH7ofXFF05Tz8JYG3lE7NFBL3zYpZpQiBVIExjkUMLR3G8Pd8OoPt_PAONbsuq3-w&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+    {
+      id: "57",
+      title: "Swiss Beauty Natural Makeup Fixer",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTkCWTSAOQ-76eZxPyNy2SDmBRQoDxRq7AO96ygzMAjfek5woIgH_ojv4Ri4C82nBrmMxH4238ZcDVp3r8K38rTxRQKOcHyV-JoCMXIJGg&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRqNlf0f6u9UhbpcvVM_AgDUEdyEhEcQIxxdFPKo3hRizp6SmEKQcHu0zRWya2mQA42hWBKABAKgWIjRJY7ATi19HfhhpfaOX19RA39kW3nNzmJhBwQugHwWQ&usqp=CAE",
+          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRLFCE_WBM3zT-VrlwaxQnIU1GwMQTjn4KnH35LDA9vpeE-5YoBXl6Y-iD3rjMwHfY8SYf_V-F9TmSDi50mH1aqSmm2yxvJse1ZTwWLlwmOkU1WkBNsq6mb&usqp=CAE",
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQmK8ubJZalKEJOyYmOfm6MkIp5WYEYa31AYfPYoG8i9ugy7GlnHogex4YZD5LqfoghuIptocexh8TyHmLi2VPBoIBfQZUyo4q6DUxdtAg&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+    {
+      id: "58",
+      title: "MARS Fabulash Volumising Mascara",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRSmASPP92fTRMliGzl3v4KwjS7jC4kWfi6l4R4sMkDjbvMf8CucoJM3yTtaMuYHkmFZHnANM_BV6-a4ftyfhm-k4IHP-KwJw&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRFe249ImDXFjr5Syl2cmUFk-lGOyhCRNPuCmXJ7TkimBVe0Nja68Kv3jwxjh3Cx1OmUGNUx-chlAajtgiMj2yIesgIX9lheF0my7o5Z1dp9lS1fSjjACEP&usqp=CAE",
+          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTELkMfKhkdAXycIb2zXBy538-HADFRsjO0ndnKJHp2fL00wXduJYlUjeZpNO_OI3DJ-6aeImXiaQ-gfNwpwdFp-eyBy0HtKPoohH8dhJ4auRQBYs0BnHIJ3Q&usqp=CAE",
+          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRptv93LB4hiuPKjJGK3D4-GFjRQFH0lPuSvUm1Ws7VFY7G6ZtbHA2r4-7dOgEeTt7QVlzWBDEIr5yu8UXAdZb2LxlyutE5ClYwpuFzTlHn2QnBPl-0UUlAgQ&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+    {
+      id: "59",
+      title: "Maybelline New York Colossal Kajal, Black",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRdg6Yjr8UQTngTa_t0VYQ236t6RlQ-J0QB2-1K_JCkVquSrIrkdSFy2QB5OBPaTvNYxBlMAZYfsIS3RN3Sj1wqowMggP58i34h3ZNP2K9WnV_9dj25Efw&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRm7-Iyca1n0BVVlqOcx0oYCRWZnkB3lZIwHs7BU-xWdk6K6UhPz7yceBormQ3nbjK8PBIYBjXnB1RH45GHz0_6wx0rG6mbBzbb95D10nKbOrHommkVTRd2&usqp=CAE",
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcStGDSmGCJRWDVo5JaSAF1mhKI191DF3430XMpbbsKfI8gkVQTvOlJ1ApdWM1gHpdhE7CL1rH5MUgpfaTcB31FFRqSLgKq4_hP92PU0ja7kq4causAyqZoi&usqp=CAE",
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTBIQMg6a54oxSGP_92nlssOsuoon8IjSIiYprLHkbusDhIS2crmgQR1wGWnA0NMhbcq_TIloz7Ov2GlUnJWUcLIrdGEHaC-BLQIc4c_jjHTQYRKSwAH6zf&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+    {
+      id: "60",
+      title: "Maybelline New York Face Studio Master Chrome Metallic Highlighter ",
+      price: "Rs. 2,199.00",
+      color: "Beige",
+      description:
+        "A cozy cardigan sweater ideal for layering, crafted from soft knitted fabric.",
+      deliveryTime: "3-6 days",
+      reviews: "⭐⭐⭐⭐ (11 Reviews)",
+      sizeOptions: ["S", "M", "L", "XL"],
+      sizes: {
+        S: { bust: "30 in", length: "20 in" },
+        M: { bust: "32 in", length: "21 in" },
+        L: { bust: "34 in", length: "22 in" },
+        XL: { bust: "36 in", length: "23 in" },
+      },
+      images: {
+        main: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSv1Ub9F9d1UB-8Rk2RDP4MtPcA7Dz-CL1JRG2AhutscXLrfHxgDRzQzB9etH0hp35_XFXW5Xs69Wm903CRqCBblJNuR-ok7gfaZxET_gk1mzbB0TpTVbY0&usqp=CAE",
+        thumbnails: [
+          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQZdx9rDU4jQUhh3Ftj7m4ss3bYT-4qARy0OdHhu-3Cdq4fuJWs6OtmGZaIfy-t3LP3TayltlnH25YQeeqS0-F4WpVK6XXyWGiMguVs0w0&usqp=CAE",
+          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSP9c3ZGGXYk6qEPxxfRdQcN0SjOmT36fo-bgY16_IeH02267b4VvcaFEYOVDV__Cqr7OBRjQo8KZDdc9Yfb6qQdCc1B8vQKjaErGs53V3m&usqp=CAE",
+          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS8RsK6ijm9qPfVPGbTnWYRaqA89au6U_7CWnBwHIO2Wo9b6dP3y06gCuOtVDvD7laPOSahuBZ4CKbOJrURTUis3vQ6MoR91zmRlYljYwPyaeLK33HRsOly&usqp=CAE",
+        ],
+      },
+      otherDetails: [
+        "Fit: Relaxed fit",
+        "Material: Knitted Fabric",
+        "Price (MRP): Rs. 2,199.00 incl. all taxes",
+        "Country of Production: India",
+        "Common Generic Name: Cardigan Sweater",
+      ],
+    },
+   
+  ]
 
 };
 
