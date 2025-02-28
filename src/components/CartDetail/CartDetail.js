@@ -13,6 +13,8 @@ function CartDetail() {
   const [selectedSize, setSelectedSize] = useState(null);
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cart")) || []);
   const [quantity, setQuantity] = useState(1); // Quantity state
+  const [showModal, setShowModal] = useState(false);
+  const sizeChartImageUrl = "https://images.meesho.com/images/products/189930771/pvgr9_512.webp"; 
 
   useEffect(() => {
     if (product) {
@@ -45,7 +47,7 @@ function CartDetail() {
     setCart(updatedCart);
     localStorage.setItem("cart", JSON.stringify(updatedCart));
 
-    // Navigate to the Order Summary page
+    // Navigate to the Order Summary page and pass product details, selected size, and quantity
     navigate("/ordersummary", { state: { product, selectedSize, quantity } });
   };
 
@@ -59,7 +61,13 @@ function CartDetail() {
           </div>
           <div className="image-container1">
             {product.images.thumbnails.map((img, index) => (
-              <img key={index} src={img} alt={`Thumbnail ${index + 1}`} className="small-image" onClick={() => setMainImage(img)} />
+              <img
+                key={index}
+                src={img}
+                alt={`Thumbnail ${index + 1}`}
+                className="small-image"
+                onClick={() => setMainImage(img)}
+              />
             ))}
           </div>
         </div>
@@ -71,7 +79,11 @@ function CartDetail() {
 
           <div className="size-options">
             {product.sizeOptions.map((size) => (
-              <button key={size} className={`size-button ${selectedSize === size ? "active" : ""}`} onClick={() => setSelectedSize(size)}>
+              <button
+                key={size}
+                className={`size-button ${selectedSize === size ? "active" : ""}`}
+                onClick={() => setSelectedSize(size)}
+              >
                 {size}
               </button>
             ))}
@@ -79,12 +91,33 @@ function CartDetail() {
 
           {/* Quantity Counter */}
           <div className="quantity-counter">
-            <button onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}>➖</button>
+            <button onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}>-</button>
             <span>{quantity}</span>
-            <button onClick={() => setQuantity(quantity + 1)}>➕</button>
+            <button onClick={() => setQuantity(quantity + 1)}>+</button>
           </div>
+      
+          <button className="check-size-btn" onClick={() => setShowModal(true)}>
+        Check Size
+      </button>
 
-          <button className="add-to-cart" onClick={addToCart}>Add to Cart</button>
+      {/* Modal Popup */}
+      {showModal && (
+        <div className="modal-overlay" onClick={() => setShowModal(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="close-modal" onClick={() => setShowModal(false)}>
+             X
+            </button>
+            <img src={sizeChartImageUrl} alt="Size Chart" className="size-chart-image" />
+          </div>
+        </div>
+      )}
+
+
+
+
+          <button className="add-to-cart" onClick={addToCart}>
+            Add to Cart
+          </button>
           <p className="delivery-info">Delivery Time: {product.deliveryTime}</p>
         </div>
       </div>
@@ -96,6 +129,7 @@ function CartDetail() {
         <p>E-mail Address: {product?.customerService?.email || "Not Available"}</p>
         <p>Description: {product?.disclaimer || "Not Available"}</p>
       </div>
+
 
       <Footer />
     </div>
