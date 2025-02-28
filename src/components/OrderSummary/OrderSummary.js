@@ -6,7 +6,8 @@ import "./OrderSummary.css";
 function OrderSummary() {
   const location = useLocation();
   const navigate = useNavigate();
-  const { product, selectedSize } = location.state || {};
+  // Added 'quantity' here along with product and selectedSize
+  const { product, selectedSize, quantity } = location.state || {};
   const [animateForm, setAnimateForm] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -64,7 +65,7 @@ function OrderSummary() {
     
     // Clear error when user starts typing in a field with error
     if (formErrors[name]) {
-      setFormErrors({...formErrors, [name]: null});
+      setFormErrors({ ...formErrors, [name]: null });
     }
   };
 
@@ -128,11 +129,10 @@ function OrderSummary() {
     }, 300);
   };
 
-
-const handleContinuePayment = () => {
-  navigate("/payment"); // Change "/payment" to your actual payment route
-};
-
+  const handleContinuePayment = () => {
+    navigate("/payment"); // Change "/payment" to your actual payment route
+  };
+  const numericPrice = parseFloat(product.price.replace(/[^0-9.-]+/g, ""));
 
   return (
     <div className="order-summary-wrapper">
@@ -156,19 +156,32 @@ const handleContinuePayment = () => {
             onMouseOut={(e) => e.target.classList.remove("image-hover")}
           />
           <div className="image-overlay">
-          <button 
-            className="order-btn"
+            <button 
+              className="order-btn"
               onClick={() => navigate(-1)}
             >
-            <span>View Details</span>
+              <span>View Details</span>
             </button>
           </div>
         </div>
 
         <div className="product-details">
           <p className="product-name"><strong>Product:</strong> {product.title}</p>
-          <p className="product-price"><strong>Price:</strong> <span className="price-tag">₹{product.price}</span></p>
-          <p className="selected-size"><strong>Selected Size:</strong> <span className="size-tag">{selectedSize}</span></p>
+          <p className="product-price">
+            <strong>Price:</strong> <span className="price-tag">₹{product.price}</span>
+          </p>
+          <p className="selected-size">
+            <strong>Selected Size:</strong> <span className="size-tag">{selectedSize}</span>
+          </p>
+          {/* Added quantity display */}
+          <p className="product-quantity">
+            <strong>Quantity:</strong> {quantity}
+          </p>
+          {/* Optionally, add a total price calculation */}
+          <p className="total-price">
+    <strong>Total:</strong> ₹{numericPrice * quantity}
+  </p>
+
           
           <div className="order-actions">
             <button 
@@ -345,6 +358,16 @@ const handleContinuePayment = () => {
                   <span className="detail-label">Size:</span>
                   <span className="detail-value">{selectedSize}</span>
                 </div>
+                {/* Added quantity detail */}
+                <div className="detail-item">
+                  <span className="detail-label">Quantity:</span>
+                  <span className="detail-value">{quantity}</span>
+                </div>
+                {/* Optionally, display total price in the modal */}
+                <div className="detail-item">
+                  <span className="detail-label">Total:</span>
+                  <span className="detail-value"> ₹{numericPrice * quantity}</span>
+                </div>
               </div>
               
               <div className="divider"></div>
@@ -370,8 +393,8 @@ const handleContinuePayment = () => {
             </div>
             
             <div className="modal-footer">
-              <button className="continue-payment">
-                <span className="btn-text"  onClick={handleContinuePayment} >Continue to Payment</span>
+              <button className="continue-payment" onClick={handleContinuePayment}>
+                <span className="btn-text">Continue to Payment</span>
                 <span className="btn-icon">💳</span>
               </button>
               
