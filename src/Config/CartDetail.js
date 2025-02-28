@@ -3,7 +3,7 @@ const config = {
     {
       id: "1",
       title: "Loose-fit Cotton Shirt",
-      price: "Rs. 1,499.00",
+      price: "1,499.00",
       color: "Blue/Striped",
       description: `Loose-fit shirt in a soft cotton weave with a collar, buttons down the
         front, and a patch chest pocket. Yoke at the back, gently dropped
@@ -53,7 +53,7 @@ const config = {
     {
       id: "2",
       title: "Slim-fit Chino Pants",
-      price: "Rs. 1,699.00",
+      price: "1,699.00",
       color: "Khaki",
       description:
         "Slim-fit chino pants with a zip fly and button closure. Two slanted side pockets and two welt pockets at the back. Soft cotton twill fabric for a comfortable fit.",
