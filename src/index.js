@@ -56,7 +56,7 @@ import BlogDetail from './components/BlogDetail/BlogDetail';
     element:<Designer/>
   },
   {
-    path:"/designerdetail",
+    path:"/designerdetail/:id",
     element:<DesignerDetail/>
   },
   {
