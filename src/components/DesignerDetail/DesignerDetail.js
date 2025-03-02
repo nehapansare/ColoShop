@@ -135,17 +135,18 @@ const DesignerDetail = () => {
             </label>
 
             {/* Color Selection - Required */}
-            <label>
-              Select Color:
-              <select name="color" value={formData.color} onChange={handleInputChange} required>
-                <option value="">-- Select a Color --</option>
-                <option value="Red">Red</option>
-                <option value="Blue">Blue</option>
-                <option value="Black">Black</option>
-                <option value="White">White</option>
-                <option value="Pink">Pink</option>
-              </select>
-            </label>
+            <label className="color-label">
+  Select Color:
+  <select name="color" value={formData.color} onChange={handleInputChange} className="color-select" required>
+    <option value="">-- Select a Color --</option>
+    <option value="Red">Red</option>
+    <option value="Blue">Blue</option>
+    <option value="Black">Black</option>
+    <option value="White">White</option>
+    <option value="Pink">Pink</option>
+  </select>
+</label>
+
 
             {/* Free Size Radio Buttons */}
             <div className="size-selection">

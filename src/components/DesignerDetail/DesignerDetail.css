@@ -143,6 +143,48 @@
   .submit-button:hover {
     background-color: #444;
   }
+
+  /* Label Styling */
+.color-label {
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Dropdown Select Box */
+.color-select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Hover and Focus Effects */
+.color-select:hover,
+.color-select:focus {
+  border-color: #007bff; /* Highlight effect */
+  outline: none;
+}
+
+/* Style the dropdown options */
+.color-select option {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Placeholder (first option) styling */
+.color-select option[value=""] {
+  color: #999;
+}
+
   
   /* Responsive Design */
   @media (max-width: 900px) {
