@@ -7,13 +7,13 @@ const pastDesigns = [
           name: "Evening Gown Collection",
           description: "Elegant floor-length gowns with intricate beadwork",
           image: "https://cdn.pixelbin.io/v2/black-bread-289bfa/69nBPw/original/rk-product/410318055002/665/410318055002.jpeg",
-          price: "$1,200",
+          price: "1,200",
         },
         {
           name: "Night Gown Collection",
           description: "Elegant floor-length gowns with intricate beadwork",
           image: "/api/placeholder/300/400",
-          price: "$1,200",
+          price: "1,200",
         },
         {
           name: "Summer Wedding Collection",
