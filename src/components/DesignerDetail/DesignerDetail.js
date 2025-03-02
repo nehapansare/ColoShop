@@ -12,7 +12,7 @@ const DesignerDetail = () => {
     address: "",
     dressType: "",
     price: "",
-    color: "", // Added Color Field
+    color: "",
     measurements: {
       Bust: "",
       Waist: "",
@@ -24,7 +24,7 @@ const DesignerDetail = () => {
   });
 
   const [selectedVariation, setSelectedVariation] = useState(null);
-  const [isFreeSize, setIsFreeSize] = useState(false);
+  const [isFreeSize, setIsFreeSize] = useState(true);
 
   const { id } = useParams();
   const selectedDesign = pastDesigns.find((design) => design.id === parseInt(id));
@@ -35,11 +35,11 @@ const DesignerDetail = () => {
 
   const handleSelectDesign = (variation) => {
     setSelectedVariation(variation);
-    setIsFreeSize(false);
+    setIsFreeSize(true);
     setFormData((prev) => ({
       ...prev,
       dressType: variation.name,
-      price: variation.price,
+      price: variation.price, // Ensures price is set correctly
     }));
   };
 
@@ -49,14 +49,23 @@ const DesignerDetail = () => {
     setFormData((prev) => ({
       ...prev,
       [name.includes("measurements") ? "measurements" : name]: name.includes("measurements")
-        ? { ...prev.measurements, [name.split(".")[1]]: value.replace(/\D/g, "") } // Allow only numbers
+        ? { ...prev.measurements, [name.split(".")[1]]: value.replace(/\D/g, "") }
         : value,
     }));
   };
 
   const handleSizeSelection = (sizeType) => {
     setIsFreeSize(sizeType === "Free Size");
+  
+    const numericPrice = parseFloat((selectedVariation?.price || "0").replace(/[^0-9.]+/g, "")) || 0;
+  
+    setFormData((prev) => ({
+      ...prev,
+      price: sizeType === "Custom Size" ? numericPrice * 2 : numericPrice,
+    }));
   };
+  
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -70,7 +79,7 @@ const DesignerDetail = () => {
 
   return (
     <div className="fashion-container">
-      <Toaster /> {/* Toaster for showing notifications */}
+      <Toaster />
       <h1 className="fashion-title">Designer Collection Detail</h1>
 
       <div className="fashion-grid">
