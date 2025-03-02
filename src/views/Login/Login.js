@@ -7,6 +7,10 @@ import loginImage from '../../img/login_LE_upscale_balanced_x4.jpg';
 const Login = () => {
   const navigate = useNavigate();
   const [isSignUp, setIsSignUp] = useState(false);
+  const [isResetMode, setIsResetMode] = useState(false);
+  const [newPassword, setNewPassword] = useState('');
+  const [rePassword, setRePassword] = useState('');
+
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -17,7 +21,7 @@ const Login = () => {
   useEffect(() => {
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     if (isLoggedIn === 'true') {
-      navigate('/'); // Redirect if already logged in
+      navigate('/'); 
     }
   }, [navigate]);
 
@@ -39,14 +43,38 @@ const Login = () => {
     } else {
       const storedUser = JSON.parse(localStorage.getItem('userData'));
 
-      if (storedUser && storedUser.email === formData.email && storedUser.password === formData.password) {
-        localStorage.setItem('isLoggedIn', 'true'); // Store login state
+      if (!storedUser) {
+        toast.error('No account found. Please sign up.');
+        return;
+      }
+
+      if (storedUser.email.trim() === formData.email.trim() && storedUser.password === formData.password) {
+        localStorage.setItem('isLoggedIn', 'true');
         toast.success('Login successful! Redirecting...');
         setTimeout(() => navigate('/'), 1500);
       } else {
         toast.error('Invalid email or password.');
       }
     }
+  };
+
+  const handlePasswordReset = () => {
+    const storedUser = JSON.parse(localStorage.getItem('userData'));
+
+    if (!storedUser || storedUser.email !== formData.email) {
+      toast.error('No account found with this email.');
+      return;
+    }
+
+    if (newPassword !== rePassword) {
+      toast.error('Passwords do not match.');
+      return;
+    }
+
+    storedUser.password = newPassword;
+    localStorage.setItem('userData', JSON.stringify(storedUser));
+    toast.success('Password updated successfully! Please log in.');
+    setIsResetMode(false);
   };
 
   return (
@@ -65,59 +93,112 @@ const Login = () => {
         <div className="right-panel">
           <h3 className='login-header'>{isSignUp ? 'Sign Up' : 'Login'}</h3>
 
-          <form className="form" onSubmit={handleSubmit}>
-            {isSignUp && (
+          {!isResetMode ? (
+            <form className="form" onSubmit={handleSubmit}>
+              {isSignUp && (
+                <div className="input-group">
+                  <label htmlFor="username">Username</label>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    value={formData.username}
+                    onChange={handleInputChange}
+                    placeholder="Enter username"
+                    required
+                  />
+                </div>
+              )}
+
               <div className="input-group">
-                <label htmlFor="username">Username</label>
+                <label htmlFor="email">Email</label>
                 <input
-                  type="text"
-                  id="username"
-                  name="username"
-                  value={formData.username}
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="Enter username"
+                  placeholder="Enter email"
                   required
                 />
               </div>
-            )}
 
-            <div className="input-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                placeholder="Enter email"
-                required
-              />
-            </div>
+              <div className="input-group">
+                <label htmlFor="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  value={formData.password}
+                  onChange={handleInputChange}
+                  placeholder="Enter password"
+                  required
+                />
+              </div>
 
-            <div className="input-group">
-              <label htmlFor="password">Password</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                value={formData.password}
-                onChange={handleInputChange}
-                placeholder="Enter password"
-                required
-              />
-            </div>
-
-            <button type="submit" className="submit-btn">
-              {isSignUp ? 'Sign Up' : 'Login'}
-            </button>
-
-            <p className="toggle-text">
-              {isSignUp ? 'Already have an account?' : "Don't have an account?"}
-              <button type="button" onClick={() => setIsSignUp(!isSignUp)} className="toggle-btn">
-                {isSignUp ? 'Login' : 'Sign Up'}
+              <button type="submit" className="submit-btn">
+                {isSignUp ? 'Sign Up' : 'Login'}
               </button>
-            </p>
-          </form>
+
+              <p className="toggle-text">
+                {isSignUp ? 'Already have an account?' : "Don't have an account?"}
+                <button type="button" onClick={() => setIsSignUp(!isSignUp)} className="toggle-btn">
+                  {isSignUp ? 'Login' : 'Sign Up'}
+                </button>
+              </p>
+
+              {!isSignUp && (
+                <p className="toggle-text">
+                  <button type="button" onClick={() => setIsResetMode(true)} className="toggle-btn">
+                    Forgot Password?
+                  </button>
+                </p>
+              )}
+            </form>
+          ) : (
+            <div className="reset-password">
+              <h3>Reset Password</h3>
+              <div className="input-group">
+                <label htmlFor="reset-email">Email</label>
+                <input
+                  type="email"
+                  id="reset-email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div className="input-group">
+                <label htmlFor="new-password">New Password</label>
+                <input
+                  type="password"
+                  id="new-password"
+                  value={newPassword}
+                  onChange={(e) => setNewPassword(e.target.value)}
+                  placeholder="Enter new password"
+                  required
+                />
+              </div>
+
+              <div className="input-group">
+                <label htmlFor="re-password">Re-enter New Password</label>
+                <input
+                  type="password"
+                  id="re-password"
+                  value={rePassword}
+                  onChange={(e) => setRePassword(e.target.value)}
+                  placeholder="Re-enter new password"
+                  required
+                />
+              </div>
+
+              <button onClick={handlePasswordReset} className="submit-btn">Reset Password</button>
+              <button type="button" onClick={() => setIsResetMode(false)} className="toggle-btn">Back to Login</button>
+            </div>
+          )}
         </div>
       </div>
     </div>
