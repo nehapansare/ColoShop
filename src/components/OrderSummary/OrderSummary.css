@@ -881,6 +881,6 @@ button:hover::before {
   /* Make both sections take full width */
   .order-summary-container,
   .form-container {
-    width: 100%;
+    width: 90%;
   }
 }
