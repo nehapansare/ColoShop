@@ -1,20 +1,22 @@
 .container3 {
     padding: 20px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
+    max-width: 1200px;
 }
 
 .title3 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: #333;
 }
 
 .product3-grid {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -25,9 +27,10 @@
     gap: 15px;
 }
 
+/* Card styling */
 .card3 {
     display: flex;
-    background:#e4dfdf;;
+    background: #e4dfdf;
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -35,6 +38,7 @@
     transition: transform 0.3s;
     padding: 10px;
     align-items: flex-start;
+    flex-direction: row;
 }
 
 .card3:hover {
@@ -42,8 +46,8 @@
 }
 
 .image3-container {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background: linear-gradient(to right, #e0e0e0, #f5f5f5);
     display: flex;
     align-items: center;
@@ -59,8 +63,6 @@
 
 .card3-content {
     padding: 15px;
-    flex-direction: column;
-    justify-content: center;
     flex-grow: 1;
 }
 
@@ -91,7 +93,7 @@
     color: #555;
 }
 
-/* Styling for the "Add to Cart" button */
+/* Button styling */
 .add-to-cart-btn {
     background-color: #222;
     color: white;
@@ -100,12 +102,62 @@
     font-size: 14px;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 30px;
-    margin-left: 40vh;
-    align-self: flex-end; /* This aligns the button to the right */
-  }
-  
-  .add-to-cart-btn:hover {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.add-to-cart-btn:hover {
     background-color: #0056b3;
-  }
-  
+}
+
+/* Responsive Design */
+
+/* For tablets */
+@media (max-width: 900px) {
+    .product3-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product3-column {
+        width: 100%;
+    }
+
+    .card3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .image3-container {
+        width: 50%;
+        height: auto;
+    }
+
+    .product3-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+    .title3 {
+        font-size: 22px;
+    }
+
+    .product3-name {
+        font-size: 16px;
+    }
+
+    .product3-details {
+        font-size: 13px;
+    }
+
+    .add-to-cart-btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
