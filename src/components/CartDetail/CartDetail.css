@@ -214,6 +214,9 @@
     padding: 8px 0;
     margin-top: 8px;
   }
+  .size-chart-image{
+    width: 90%;
+  }
   
   .size-options {
     flex-wrap: wrap;
