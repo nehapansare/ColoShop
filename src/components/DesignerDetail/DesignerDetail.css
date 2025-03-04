@@ -4,6 +4,7 @@
     margin: auto;
     padding: 20px;
     font-family: Arial, sans-serif;
+    margin-top: 80px;
   }
   
   .fashion-title {
@@ -198,5 +199,33 @@
       width: 100%;
       max-width: 300px;
     }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .fashion-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .fashion-portfolio {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .fashion-form {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
+  .fashion-card-description {
+    text-align: left;
+    font-size: 1rem;
+    color: #444;
+    margin: 10px 0;
+    padding: 10px;
   }
   

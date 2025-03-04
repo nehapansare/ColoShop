@@ -3,6 +3,8 @@ import "./DesignerDetail.css";
 import { useParams } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
 import pastDesigns from "../../Config/DesignerCard";
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 
 const DesignerDetail = () => {
   const [formData, setFormData] = useState({
@@ -78,6 +80,8 @@ const DesignerDetail = () => {
   };
 
   return (
+    <div>
+      <Navbar/>
     <div className="fashion-container">
       <Toaster />
       <h1 className="fashion-title">Designer Collection Detail</h1>
@@ -201,6 +205,8 @@ const DesignerDetail = () => {
           </form>
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };
