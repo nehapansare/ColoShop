@@ -367,7 +367,7 @@
 .cart-toggle-btn {
   position: fixed;
   top: 123px;
-  right: 20px; /* Adjust this value to move it further right if needed */
+ right: 0;
   background: #fff;
   border: none;
   font-size: 20px;
