@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 import "./OrderSummary.css";
+import Footer from "../Footer/Footer";
+
+
 
 function OrderSummary() {
   const location = useLocation();
@@ -135,6 +138,8 @@ function OrderSummary() {
   const numericPrice = parseFloat(product.price.replace(/[^0-9.-]+/g, ""));
 
   return (
+    <div>
+      
     <div className="order-summary-wrapper">
       <Toaster position="top-center" reverseOrder={false} />
 
@@ -406,6 +411,8 @@ function OrderSummary() {
           </div>
         </div>
       )}
+    </div>
+    <Footer/>
     </div>
   );
 }
