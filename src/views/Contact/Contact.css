@@ -122,7 +122,7 @@
   @media (max-width: 768px) {
     .contact-container {
       max-width: 95%;
-      top: 70vh;
+      top: 50vh;
     }
   
     .contact-heading {
