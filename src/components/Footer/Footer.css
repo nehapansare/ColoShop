@@ -9,23 +9,23 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     align-items: flex-start;
 }
 
 .footer-logo {
-    width: 20%;
+   
     text-align: center;
 }
 
 .footer-logo-img {
-    max-width: 100%;
+    max-width: 150px;
     height: auto;
     margin-bottom: 20px;
 }
 
 .footer-section {
-    width: 15%;
+    width: 20%;
     text-align: left;
 }
 
@@ -40,22 +40,25 @@
     color: #ddd;
 }
 
+.footer-links {
+    padding: 0;
+    list-style: none;
+}
+
 .footer-links a {
-    color: #fff; /* Make Quick Links text white */
-    text-decoration: none; /* Remove underline */
+    color: #fff;
+    text-decoration: none;
     font-size: 14px;
 }
 
 .footer-links a:hover {
-    color: #ff6347; /* Hover color */
+    color: #ff6347;
 }
 
 .footer-social {
     display: flex;
-    gap: 15px; /* Adjust space between icons */
-}
-
-.footer-social li {
+    gap: 15px;
+    padding: 0;
     list-style: none;
 }
 
@@ -66,7 +69,7 @@
 }
 
 .footer-social a:hover {
-    color: #ff6347; /* Hover color */
+    color: #ff6347;
 }
 
 .footer-bottom {
@@ -75,7 +78,33 @@
     color: #bbb;
 }
 
-/* Remove gap between "Quick Links" and "Follow Us" */
-.footer-section:last-child {
-    margin-left: 0;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-text, .footer-links a, .footer-social a {
+        font-size: 13px;
+    }
 }
