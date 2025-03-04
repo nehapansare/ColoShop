@@ -1,22 +1,22 @@
-/* Full screen container */
+/* Global Styles */
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Full Screen Container */
 .container {
   display: flex;
   height: 100vh;
   width: 100vw;
-
-}
-.body{
-
 }
 
-/* Left panel with full-height image */
+/* Left Panel (Image) */
 .left-panel {
   width: 50%;
   height: 100vh;
   position: relative;
-}
-.login-header{
-  font-size: 30px;
 }
 
 .left-panel-image {
@@ -27,10 +27,9 @@
   top: 0;
   left: 0;
   z-index: -1;
- 
 }
 
-/* Text overlay animation */
+/* Text Overlay on Image */
 @keyframes slideIn {
   from {
     transform: translate(-100%, -50%);
@@ -42,10 +41,9 @@
   }
 }
 
-/* Text overlay on image */
 .overlay-text {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -56,7 +54,7 @@
   animation: slideIn 1s ease-out;
 }
 
-/* Right Panel Styling */
+/* Right Panel (Form) */
 .right-panel {
   width: 50%;
   display: flex;
@@ -69,10 +67,14 @@
   border-radius: 20px 0 0 20px;
 }
 
-/* Stylish Form */
+.login-header {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
 .form {
   width: 80%;
-  
   background: white;
   padding: 30px;
   border-radius: 12px;
@@ -82,7 +84,6 @@
   gap: 20px;
 }
 
-/* Input Group Styling */
 .input-group {
   display: flex;
   flex-direction: column;
@@ -104,12 +105,9 @@
   transition: all 0.3s ease;
 }
 
-.input-group input:focus {
-  border-color: #007bff;
-  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
-}
 
-/* Submit Button with Hover Effect */
+
+/* Button Styles */
 .submit-btn {
   background: linear-gradient(90deg, #222, #224);
   color: white;
@@ -127,7 +125,6 @@
   transform: scale(1.05);
 }
 
-/* Toggle Between Login and Sign Up */
 .toggle-text {
   text-align: center;
   font-size: 14px;
@@ -148,24 +145,240 @@
   color: #223;
 }
 
-/* Responsive Design */
+.reset-password {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reset-password h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.reset-password .input-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.reset-password label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.reset-password input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.reset-password .submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #222, #224);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reset-password .submit-btn:hover {
+  background: linear-gradient(90deg, #333, #114);
+}
+
+.reset-password .toggle-btn {
+  border: none;
+    background: none;
+    color: #222;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3sease
+}
+
+.reset-password .toggle-btn:hover {
+  text-decoration: underline;
+  color: #223;
+}
+
+
+/* Responsive Styles for Tablets & Small Screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
   }
-
   .left-panel {
-    width: 100%;
+    width: 120%;
     height: 40vh;
   }
-
   .right-panel {
     width: 100%;
     height: 60vh;
     border-radius: 20px 20px 0 0;
+    padding: 20px;
+  }
+  .login-header {
+    font-size: 26px;
+    margin-top: 140px;
+  }
+  
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  animation: slideIn 1s ease-out;
+}
+ 
+}
+
+/* Further Adjustments for Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .login-header {
+    font-size: 26px;
+    margin-top: 120px;
+  }
+  .overlay-text {
+    font-size: 15px;
+    padding: 15px;
+    width: 250px;
+  }
+  .form {
+    width: 95%;
+    padding: 25px;
+  }
+  .input-group input {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .submit-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .toggle-text {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 300px) {
+  /* Switch to two-column layout */
+  .container {
+    flex-direction: row;
+  }
+  /* Left panel (image) takes 40% width and full viewport height */
+  .left-panel {
+    width: 120%;
+    height: 100vh;
+    position: relative;
+  }
+  .left-panel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Position overlay text (login header) at bottom center of the image */
+  .overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+  }
+  /* Right panel (form) takes 60% width, full height, and resets padding */
+  .right-panel {
+    width: 60%;
+    height: 100vh;
+    border-radius: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Hide the separate login header from the form since overlay text is used */
+  .login-header {
+    display: none;
+  }
+  /* Adjust the form width */
+  .form {
+    width: 90%;
+  }
+  
+}
+
+/* Styles for screens larger than 800px */
+@media screen and (min-width: 769px) {
+  .container {
+    flex-direction: row;
+  }
+  
+  .left-panel {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .right-panel {
+    width: 50%;
+    padding: 50px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .login-header {
+    font-size: 32px;
+    margin-bottom: 25px;
   }
 
   .form {
-    width: 90%;
+    width: 70%;
+    padding: 40px;
+  }
+
+  .input-group label {
+    font-size: 16px;
+  }
+
+  .input-group input {
+    padding: 14px;
+    font-size: 18px;
+  }
+
+  .submit-btn {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .toggle-text {
+    font-size: 16px;
+  }
+
+  .toggle-btn {
+    font-size: 16px;
+  }
+
+  .overlay-text {
+    font-size: 20px;
+    padding: 15px;
+    width: 400px;
   }
 }
