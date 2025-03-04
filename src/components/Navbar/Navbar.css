@@ -85,7 +85,7 @@
 }
 
 .hamburger-menu span {
-    width: 22px;
+    width: 24px;
     height: 3px;
     background: black;
     margin: 4px 0;
@@ -113,6 +113,10 @@
 
     .nav-links.open {
         display: flex;
+    }
+    .nav-links {
+        top: 75px;
+        gap: 10px;
     }
 
     .nav-links a {
@@ -159,7 +163,7 @@
     }
 
     .nav-links {
-        top: 55px;
+        top: 75px;
         gap: 10px;
     }
 
