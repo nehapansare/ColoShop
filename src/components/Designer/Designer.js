@@ -17,7 +17,7 @@ function Designer() {
     {
       id: 2,
       image:
-        "https://img.theweek.in/content/dam/week/leisure/lifestyle/images/2018/4/12/anita-dongre.jpg",
+        "https://www.bollywoodshaadis.com/img/article-20231233813144947689000.webp",
       category: "WOMEN",
       name: "Anita Dongre",
       describe:
