@@ -142,61 +142,82 @@
   text-align: left;
   font-size: 16px;
 }
+/* Responsive Styles for CartDetail Component */
 
-/* Responsive Design */
-@media screen and (max-width: 1024px) {
+/* For tablets and small screens */
+@media (max-width: 768px) {
   .cart-detail-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 80px;
   }
-  .cart-box {
-      width: 80%;
-  }
+  
+  .cart-left, 
   .cart-right {
-      width: 80%;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .cart-box {
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  .cart-image {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  /* Make buttons full width and adjust font sizes */
+  .check-size-btn,
+  .add-to-cart {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+  
+  .size-options {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .quantity-counter {
+    justify-content: center;
   }
 }
 
-@media screen and (max-width: 768px) {
+/* For mobile devices */
+@media (max-width: 480px) {
+  .cart-detail-container {
+    padding: 10px;
+    margin-top: 60px;
+  }
+  
   .cart-box {
-      width: 90%;
+    width: 100%;
+    max-width: 300px;
   }
+  
   .cart-image {
-      max-width: 350px;
+    width: 100%;
+    max-width: 300px;
   }
-  .small-image {
-      width: 70px;
-      height: 70px;
-  }
-  .size-button {
-      padding: 6px 10px;
-      font-size: 14px;
-  }
+  
+  .check-size-btn,
   .add-to-cart {
-      font-size: 16px;
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 0;
+    margin-top: 8px;
   }
-}
-
-@media screen and (max-width: 500px) {
-  .cart-box {
-      width: 100%;
-  }
-  .cart-image {
-      max-width: 300px;
-  }
-  .small-image {
-      width: 60px;
-      height: 60px;
-  }
-  .size-button {
-      padding: 5px 8px;
-      font-size: 12px;
-  }
-  .add-to-cart {
-      font-size: 14px;
-      padding: 10px;
-  }
-  .customer-service {
-      font-size: 14px;
+  
+  .size-options {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
   }
 }
