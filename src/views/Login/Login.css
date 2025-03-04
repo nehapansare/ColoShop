@@ -222,11 +222,11 @@
     flex-direction: column;
   }
   .left-panel {
-    width: 110%;
+    width: 100%;
     height: 40vh;
   }
   .right-panel {
-    width: 100%;
+    width: 90%;
     height: 60vh;
     border-radius: 20px 20px 0 0;
     padding: 20px;
