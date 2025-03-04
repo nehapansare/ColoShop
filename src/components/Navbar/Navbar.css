@@ -1,7 +1,4 @@
-/* Navbar Styling */
-/* Ensure navbar stays fixed at the top */
-/* Ensure navbar stays fixed at the top with transparency */
-/* Ensure navbar stays fixed at the top */
+/* Basic Navbar Styles */
 .navbar {
     position: fixed;
     top: 0;
@@ -10,75 +7,172 @@
     background-color: rgb(159, 24, 24);
     color: white;
     padding: 15px;
-    z-index: 100; /* Make sure it's above other elements */
+    z-index: 100; /* Ensure it sits on top */
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-
-/* Brand Name Styling */
-.brand-name1 {
+  }
+  
+  /* Brand Name Styling */
+  .brand-name1 {
     color: beige;
     font-size: 40px;
     margin-left: 60px;
-}
-
-.brand-name2 {
+  }
+  
+  .brand-name2 {
     color: black;
     font-size: 30px;
-    margin-left: 5px; /* Small space between COLO and SHOP */
-}
-
-/* Navigation Links */
-.nav-links {
+    margin-left: 5px;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
     display: flex;
-    gap: 70px; /* Space between links */
-}
-
-/* Remove underline and set default text color */
-.nav-links a {
-    text-decoration: none; /* Removes underline */
-    color: black; /* Default text color */
+    /* Dynamic gap: minimum 20px, scales with viewport (5vw), up to a maximum of 70px */
+    gap: clamp(20px, 5vw, 70px);
+  }
+  
+  /* Navigation Links Styling */
+  .nav-links a {
+    text-decoration: none;
+    color: black;
     font-size: 22px;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
-}
-
-/* Add hover effect */
-.nav-links a:hover {
-    color: white; /* Change color when hovered */
-}
-
-/* Login Box Styling */
-/* Login Box Styling (Transparent) */
-.login-box {
-    background-color: transparent; /* Transparent background */
-    color:black; /* Text color */
+  }
+  
+  /* Hover Effect for Links */
+  .nav-links a:hover {
+    color: white;
+  }
+  
+  /* Login Box Styling */
+  .login-box {
+    background-color: transparent;
+    color: black;
     padding: 10px 30px;
-    border: 1px solid white; /* White border to keep visibility */
-   
+    border: 1px solid white;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    margin-right: 60px; /* Move it to the right */
-}
-
-/* Hover Effect */
-.login-box:hover{
+    margin-right: 60px;
+  }
+  
+  .login-box:hover {
     color: white;
     border: 1px solid black;
-}
-.login-box a {
-    text-decoration: none; /* Removes underline */
-    color: black; /* Default text color */
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    color: black;
     font-size: 22px;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
-}
-
-/* Add hover effect */
-.login-box a:hover {
-    color: white; /* Change color when hovered */
-}
+  }
+  
+  .login-box a:hover {
+    color: white;
+  }
+  
+  /* Hamburger Menu Icon */
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 4px 0;
+    transition: all 0.3s;
+  }
+  
+  /* Responsive Styles for Small Devices */
+  @media (max-width: 768px) {
+    /* Show hamburger menu on smaller screens */
+    .hamburger-menu {
+      display: flex;
+      margin-left: 250px;
+    }
+    
+    /* Hide navigation links by default (mobile dropdown) */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: rgb(159, 24, 24);
+      position: absolute;
+      top: 70px; 
+      left: 0;
+      padding: 10px 7px;
+      gap: 10px; /* Fixed smaller gap for dropdown */
+    }
+    
+    /* Show nav links when hamburger is toggled open */
+    .nav-links.open {
+      display: flex;
+    }
+    .nav-links a:hover {
+        color: white;
+      }
+    
+    .navbar {
+      padding: 0;
+    }
+    
+    .nav-links a {
+      padding: 10px;
+      text-align: center;
+      border-top: 1px solid white;
+      font-size: 18px;
+    }
+    
+    /* Adjust brand name and login box for smaller screens */
+    .brand-name1 {
+      font-size: 30px;
+      margin-left: 20px;
+    }
+    
+    .brand-name2 {
+      font-size: 24px;
+    }
+    
+    .login-box {
+      margin-right: 20px;
+      margin-top: 10px;
+      padding: 8px 20px;
+      font-size: 18px;
+    }
+  }
+  
+  /* Further Adjustments for Mobile Devices */
+  @media (max-width: 480px) {
+    .brand-name1 {
+      font-size: 24px;
+      margin-left: 10px;
+    }
+    
+    .brand-name2 {
+      font-size: 20px;
+    }
+    
+    .nav-links a {
+      font-size: 16px;
+      padding: 8px;
+    }
+    .nav-links a:hover {
+        color: white;
+      }
+    
+    .login-box {
+      font-size: 16px;
+      padding: 6px 15px;
+    }
+  }
+  
