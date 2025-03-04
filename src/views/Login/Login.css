@@ -63,7 +63,6 @@
   align-items: center;
   padding: 40px;
   background: white;
-  box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.1);
   border-radius: 20px 0 0 20px;
 }
 
@@ -223,7 +222,7 @@
     flex-direction: column;
   }
   .left-panel {
-    width: 120%;
+    width: 110%;
     height: 40vh;
   }
   .right-panel {
@@ -264,7 +263,7 @@
     width: 250px;
   }
   .form {
-    width: 95%;
+    width: 100%;
     padding: 25px;
   }
   .input-group input {
