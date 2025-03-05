@@ -20,7 +20,7 @@
 /* Make the image start from the top */
 .full-screen-img {
     width: 100%;
-    height: 80vh; /* Adjust the height to fit below the navbar */
+    height: auto; /* Adjust the height to fit below the navbar */
     object-fit: cover;
     display: block;
 }
@@ -338,71 +338,96 @@ margin-top: 20px;
     font-size: 12px;
     font-weight: bold;
   }
-  @media (min-width: 600px) and (max-width: 760px) {
-    .home-container {
-      width: 100%;
-      padding: 0; /* Remove padding for full-bleed effect */
-      margin: 0;
-      box-sizing: border-box;
+ 
+  @media (max-width: 700px) {
+    /* Center the explore button and adjust its size */
+    .explore-btn {
+      top: 72%;
+      left: 10%;
+      transform: translateX(-50%);
+      font-size: 11px;
+      padding: 8px 8px;
     }
-  
-    .cart-container2 {
+    .timer-boxes {
       display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
+      justify-content: center;
+      gap: 20px;
+      position: absolute;
+      top: 30vh;
+      right: 40%;
+      transform: translateX(-50%);
     }
-  
-    .cart-item-wrapper {
-      width: 100%;
-    }
-  
-    /* Make the image span the full viewport width without any side space */
-    .full-screen-img {
-      display: block;
-      width: 100vw;
-      margin-right: calc(60% - 60vw);
-      height: auto;
-      object-fit: cover;
-    }
-  }
-  @media (min-width: 300px) and (max-width:500px) {
-    /* Remove default margins and paddings */
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
-  
-    .home-container {
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
-  
-    /* Full-width image styling for 300px screens */
-    .full-screen-img {
-      display: block;
-      width: 100vh;
-      height: auto;
-      object-fit: cover;
-      margin-left: calc(50% - 50vw);
-    }
+    
+  .timer-box {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  
-  
-  
+  .shop-now-btn {
+    position: absolute;
+    bottom: 72px; /* Adjust the button's vertical position */
+    right: 60%;
+    transform: translateX(-50%);
+    background-color:transparent;
+    color: black;
+    font-size: 15px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+ 
+  }
 
-/* Medium devices (tablets) */
-@media (max-width: 768px) {
-  .home-page {
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 2rem;
+  
+  @media (min-width: 700px) and (max-width:850px){
+    /* Center the explore button and adjust its size */
+    .explore-btn {
+      top: 72%;
+      left: 10%;
+      transform: translateX(-50%);
+      font-size: 11px;
+      padding: 8px 8px;
+    }
+    .timer-boxes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: absolute;
+      top: 38vh;
+      right: 50%;
+      transform: translateX(-50%);
+    }
+    
+  .timer-box {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .cart-item-wrapper {
-    width: calc(50% - 16px);
+  .shop-now-btn {
+    position: absolute;
+    bottom: 98px; /* Adjust the button's vertical position */
+    right: 65%;
+    transform: translateX(-50%);
+    background-color:transparent;
+    color: black;
+    font-size: 15px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
   }
-}
-
+ 
+  }
