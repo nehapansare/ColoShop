@@ -431,3 +431,47 @@ margin-top: 20px;
   }
  
   }
+  @media (max-width: 480px){
+    .explore-btn {
+      top: 72%;
+      left: 10%;
+      transform: translateX(-50%);
+      font-size: 10px;
+      padding: 7px 7px;
+    }
+    .timer-boxes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: absolute;
+      top: 22vh;
+      right: 30%;
+      transform: translateX(-50%);
+    }
+    
+  .timer-box {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shop-now-btn {
+    position: absolute;
+    bottom: 52px; /* Adjust the button's vertical position */
+    right: 60%;
+    transform: translateX(-50%);
+    background-color:transparent;
+    color: black;
+    font-size: 10px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+ 
+  }
