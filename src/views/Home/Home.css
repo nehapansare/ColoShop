@@ -473,5 +473,8 @@ margin-top: 20px;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
   }
+  .p1{
+    font-size: 30px;
+  }
  
   }
