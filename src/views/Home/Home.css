@@ -105,11 +105,11 @@
 
 .explore-btn {
     position: absolute;
-    top: 85%;
+    top: 75%;
     left: 10%;
     background-color: white;
     color: black;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     padding: 12px 24px;
     border: none;
