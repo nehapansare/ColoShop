@@ -444,15 +444,15 @@ margin-top: 20px;
       justify-content: center;
       gap: 20px;
       position: absolute;
-      top: 22vh;
-      right: 30%;
+      top: 18vh;
+      right: 20%;
       transform: translateX(-50%);
     }
     
   .timer-box {
     background-color: black;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
